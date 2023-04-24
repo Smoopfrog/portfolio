@@ -1,4 +1,5 @@
-const Header = () => {
+
+const Body = () => {
   return (
     <header>
       <h1>Jeff Stinson</h1>
@@ -11,4 +12,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Body;
