@@ -4,11 +4,10 @@
   align-items: center;
   justify-content: space-between;
 
-  background-color: grey;
-
   h1 {
     font-size: 1.1em;
     font-weight: 700;
+    color: #333;
   }
 }
 
@@ -22,16 +21,17 @@
     text-decoration: none;
     position: relative;
     padding: 0.2em 0;
-    color: black;
+    color: #333;
     overflow: hidden;
-
   }
 
   a:visited {
     text-decoration: none;
-    color: black;
+    color: #333;
   }
-
+  a:hover {
+    color: hotpink;
+  }
   /* Fade in */
   a::after {
     content: "";
@@ -45,7 +45,7 @@
     transition: opacity 300ms, transform 300ms;
     transform: translate3d(-100%, 0, 0);
   }
-  
+
   a:hover::after,
   a:focus::after {
     transform: translate3d(0, 0, 0);

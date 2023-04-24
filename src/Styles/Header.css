@@ -3,11 +3,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: grey;
 }
 .header h1 {
   font-size: 1.1em;
   font-weight: 700;
+  color: #333;
 }
 
 .header-links {
@@ -21,12 +21,15 @@
   text-decoration: none;
   position: relative;
   padding: 0.2em 0;
-  color: black;
+  color: #333;
   overflow: hidden;
 }
 .header-links a:visited {
   text-decoration: none;
-  color: black;
+  color: #333;
+}
+.header-links a:hover {
+  color: hotpink;
 }
 .header-links a::after {
   content: "";
