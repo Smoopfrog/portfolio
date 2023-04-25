@@ -5,16 +5,7 @@
   FONT SIZE SYSTEM (px)
   10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 */
-/*
-  SPACING SYSTEM (px)
-  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-
-  FONT SIZE SYSTEM (px)
-  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
-*/
 .project {
-  width: 60%;
-  margin: 0 auto;
   padding: 30px;
   border-radius: 10px;
   background-color: white;
@@ -49,7 +40,7 @@
   gap: 5px;
   background-color: #fff;
   border-radius: 5px;
-  border: solid 2px black;
+  border: solid 2px #333;
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
   color: #333;
   cursor: pointer;

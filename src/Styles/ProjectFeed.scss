@@ -1,0 +1,12 @@
+@import "./Variables.scss";
+
+.projects-container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.section-title {
+  color: $text-color;
+  text-align: center;
+  margin-bottom: 32px;
+}
