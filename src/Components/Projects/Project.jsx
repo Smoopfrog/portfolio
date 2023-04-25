@@ -10,6 +10,18 @@ const Project = () => {
         quo nobis, provident natus, distinctio maxime tenetur cumque aliquid
         ullam perferendis laudantium.
       </p>
+      <ul className="tech-stack">
+        <li>Stack</li>
+        <li>React</li>
+        <li>Express</li>
+        <li>Sass</li>
+        <li>Redux</li>
+        <li>Something</li>
+      </ul>
+      <div className="project-btns">
+        <button>Live Demo</button>
+        <button>View Source</button>
+      </div>
     </article>
   );
 };
