@@ -2,14 +2,12 @@ import "../Styles/About.css";
 
 const About = () => {
   return (
-    <section className="about">
+    <section className="about" id="about">
       <div className="about-info">
         <h1>Jeff Stinson</h1>
         <p>
           A full-stack developer, with a background in hospitality management,
-          keen to dive into the world of web development. Graduated from
-          Lighthouse Labs where I became proficient with front and backend
-          technologies.
+          keen to dive into the world of web development.
         </p>
       </div>
       <div className="about-links">
