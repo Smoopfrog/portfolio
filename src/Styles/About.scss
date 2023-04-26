@@ -1,0 +1,13 @@
+.about {
+  width: 60%;
+  margin: 0 auto;
+  h1 {
+    color: red;
+  }
+}
+
+.about-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
