@@ -4,23 +4,16 @@ const About = () => {
   return (
     <section className="about" id="about">
       <div className="about-info">
-        <h1>Jeff Stinson</h1>
+        <div>
+          <h1>Jeff </h1>
+          <h1>Stinson</h1>
+        </div>
         <p>
           A full-stack developer, with a background in hospitality management,
           keen to dive into the world of web development.
         </p>
       </div>
       <div className="about-links">
-        <a
-          href="https://www.linkedin.com/in/jeff-stinson94/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <svg class="social-icon" viewBox="0 0 512 512">
-            <path d="M186.4 142.4c0 19-15.3 34.5-34.2 34.5 -18.9 0-34.2-15.4-34.2-34.5 0-19 15.3-34.5 34.2-34.5C171.1 107.9 186.4 123.4 186.4 142.4zM181.4 201.3h-57.8V388.1h57.8V201.3zM273.8 201.3h-55.4V388.1h55.4c0 0 0-69.3 0-98 0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9 0 26.9 0 98 0 98h57.5c0 0 0-68.2 0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z"></path>
-          </svg>
-          <div className="social-anchor-circle"></div>
-        </a>
         <a
           href="https://github.com/Smoopfrog"
           target="_blank"
@@ -31,7 +24,17 @@ const About = () => {
           </svg>
           <div className="social-anchor-circle"></div>
         </a>
-        <a href="/" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.linkedin.com/in/jeff-stinson94/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg class="social-icon" viewBox="0 0 512 512">
+            <path d="M186.4 142.4c0 19-15.3 34.5-34.2 34.5 -18.9 0-34.2-15.4-34.2-34.5 0-19 15.3-34.5 34.2-34.5C171.1 107.9 186.4 123.4 186.4 142.4zM181.4 201.3h-57.8V388.1h57.8V201.3zM273.8 201.3h-55.4V388.1h55.4c0 0 0-69.3 0-98 0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9 0 26.9 0 98 0 98h57.5c0 0 0-68.2 0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z"></path>
+          </svg>
+          <div className="social-anchor-circle"></div>
+        </a>
+        <a href="mailto: jeffstinson@hotmail.com" target="_blank" rel="noopener noreferrer">
           <svg class="social-icon" viewBox="0 0 512 512">
             <path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"></path>
           </svg>
