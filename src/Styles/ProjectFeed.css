@@ -6,13 +6,20 @@
   10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 */
 .projects-container {
+  width: 100%;
+  padding-top: 4rem;
+  display: flex;
+  background-color: bisque;
+}
+
+.div-container {
   width: 60%;
   margin: 0 auto;
-  padding-top: 4rem;
 }
 
 .section-title {
   color: #333;
   font-size: 32px;
+  font-family: "Rammetto One", cursive;
   margin-bottom: 32px;
 }/*# sourceMappingURL=ProjectFeed.css.map */

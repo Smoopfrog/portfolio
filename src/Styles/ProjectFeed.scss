@@ -1,15 +1,24 @@
 @import "./Variables.scss";
 
 .projects-container {
+  width: 100%;
+  padding-top: 4rem;
+  display: flex;
+  background-color: bisque;
+}
+
+.div-container {
   width: 60%;
   margin: 0 auto;
-  padding-top: 4rem;
+
 
 }
 
 .section-title {
   color: $text-color;
   font-size: 32px;
+  font-family: "Rammetto One", cursive;
+
   // text-decoration: underline;
   // text-align: center;
   margin-bottom: 32px;
