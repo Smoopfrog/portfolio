@@ -8,6 +8,7 @@
 .projects-container {
   width: 100%;
   padding-top: 4rem;
+  padding-bottom: 4rem;
   display: flex;
   background-color: bisque;
 }
@@ -24,10 +25,14 @@
   display: flex;
   gap: 20px;
   align-items: center;
+  margin-bottom: 48px;
 }
 
 .div-container {
   width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0 auto;
 }
 
@@ -49,4 +54,26 @@
   font-size: 32px;
   font-family: "Rammetto One", cursive;
   margin-bottom: 32px;
+}
+
+.carousel-btns {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.circle {
+  width: 24px;
+  height: 24px;
+}
+
+.circle:hover {
+  cursor: pointer;
+  stroke: pink;
+  fill: pink;
+}
+
+.grey {
+  fill: rgb(179, 177, 177);
+  stroke: rgb(179, 177, 177);
 }/*# sourceMappingURL=ProjectFeed.css.map */
