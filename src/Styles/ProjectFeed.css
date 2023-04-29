@@ -12,9 +12,20 @@
   background-color: bisque;
 }
 
+.carousel {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
 .div-container {
   width: 60%;
   margin: 0 auto;
+}
+
+.arrow {
+  width: 24px;
+  height: 24px;
 }
 
 .section-title {

@@ -4,7 +4,7 @@ const Project = (props) => {
   console.log("project props", props);
   return (
     <article className="project">
-      <h1>{props.name}</h1>
+      <h1>{props.title}</h1>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
         blanditiis? Corporis harum cupiditate nulla iusto impedit explicabo vel

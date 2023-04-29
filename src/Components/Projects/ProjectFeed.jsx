@@ -1,11 +1,13 @@
 import Project from "./Project";
 import "../../Styles/ProjectFeed.css";
 import { useState } from "react";
+import next from "../../Assets/next.png";
+import back from "../../Assets/back.png";
 
 const projects = [
-  { name: "Initiative" },
-  { name: "Betbook" },
-  { name: "Frame Fitness" },
+  { title: "Initiative" },
+  { title: "Betbook" },
+  { title: "Frame Fitness" },
 ];
 
 const ProjectFeed = () => {
@@ -24,17 +26,28 @@ const ProjectFeed = () => {
     <section className="projects-container" id="projects">
       <div className="div-container">
         <h1 className="section-title">Projects</h1>
-        <button onClick={prevSlide}>left</button>
-        {/* <Project /> */}
-        {projects.map((project, index) => {
-          console.log("map project", project);
-          return (
-            <div key={index}>
-              {index === currentIndex && <Project name={project.name} />}
-            </div>
-          );
-        })}
-        <button onClick={nextSlide}>right</button>
+        <div className="carousel">
+          <img
+            onClick={prevSlide}
+            src={back}
+            alt="next"
+            className="arrow"
+          ></img>
+          {projects.map((project, index) => {
+            console.log("map project", project);
+            return (
+              <div key={index}>
+                {index === currentIndex && <Project title={project.title} />}
+              </div>
+            );
+          })}
+          <img
+            onClick={nextSlide}
+            src={next}
+            alt="next"
+            className="arrow"
+          ></img>
+        </div>
       </div>
     </section>
   );
