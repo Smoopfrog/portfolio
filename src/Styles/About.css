@@ -8,7 +8,7 @@
 .about {
   width: 60%;
   margin: 0 auto;
-  padding-top: 4rem;
+  padding: 4rem 0;
 }
 .about h1 {
   font-family: "Rammetto One", cursive;
