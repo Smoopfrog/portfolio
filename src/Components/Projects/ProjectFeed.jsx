@@ -36,8 +36,10 @@ const ProjectFeed = () => {
           {projects.map((project, index) => {
             console.log("map project", project);
             return (
-              <div key={index}>
-                {index === currentIndex && <Project title={project.title} />}
+              <div key={index} className={index === currentIndex ? 'current-project' : 'hidden-project'}>
+                {index === currentIndex && (
+                  <Project title={project.title} key={index} />
+                )}
               </div>
             );
           })}

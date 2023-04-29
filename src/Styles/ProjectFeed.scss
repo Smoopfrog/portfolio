@@ -7,6 +7,13 @@
   background-color: bisque;
 }
 
+.hidden-project {
+  display: none;
+}
+
+.current-project {
+  display: block;
+}
 .carousel {
   display: flex;
   gap: 20px;
@@ -19,8 +26,16 @@
 }
 
 .arrow {
-  width: 24px;
-  height: 24px;
+  width: 48px;
+  height: 48px;
+}
+
+.arrow:hover {
+  cursor: pointer;
+}
+
+.arrow:active {
+  opacity: 50%;
 }
 
 .section-title {
