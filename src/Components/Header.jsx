@@ -8,6 +8,7 @@ const Header = () => {
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
+  
   function useScrollDirection() {
     const [scrollDirection, setScrollDirection] = useState(null);
 
@@ -25,12 +26,14 @@ const Header = () => {
         }
         lastScrollY = scrollY > 0 ? scrollY : 0;
       };
+
       window.addEventListener("scroll", updateScrollDirection); // add event listener
+      
       return () => {
         window.removeEventListener("scroll", updateScrollDirection); // clean up
       };
     }, [scrollDirection]);
-    console.log(scrollDirection);
+
     return scrollDirection;
   }
 
