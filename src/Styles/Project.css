@@ -22,6 +22,7 @@
   display: flex;
   list-style-type: none;
   gap: 20px;
+  flex-wrap: wrap;
   margin-bottom: 16px;
 }
 .tech-stack li {
@@ -34,7 +35,7 @@
   display: flex;
   gap: 20px;
 }
-.project-btns button {
+.project-btns a:link {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -48,18 +49,22 @@
   text-decoration: none;
   transition: all 235ms ease-in-out;
 }
+.project-btns a:visited {
+  border-color: black;
+  color: black;
+}
 .project-btns svg {
   width: 20px;
   height: 20px;
 }
-.project-btns button:hover {
+.project-btns a:hover {
   box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
   transform: translate3d(0, -2px, 0);
   background-color: black;
   color: white;
   fill: white;
 }
-.project-btns button:active {
+.project-btns a:active {
   box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
   transform: translate3d(0, 0, 0);
 }/*# sourceMappingURL=Project.css.map */
