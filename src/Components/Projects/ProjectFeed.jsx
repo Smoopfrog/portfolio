@@ -3,6 +3,8 @@ import "../../Styles/ProjectFeed.css";
 import { useState } from "react";
 import next from "../../Assets/next.png";
 import back from "../../Assets/back.png";
+import initiative from "../../Assets/initiative.png";
+import betbook from "../../Assets/betbook-feed.jpg";
 
 const projects = [
   {
@@ -22,6 +24,7 @@ const projects = [
     ],
     url: "https://initiative.herokuapp.com/",
     github: "https://github.com/Smoopfrog/Initiative",
+    image: initiative,
   },
   {
     title: "Betbook",
@@ -35,6 +38,7 @@ const projects = [
       "Redux Toolkit",
       "Moment",
     ],
+    image: betbook,
     url: null,
     github: "https://github.com/Smoopfrog/bet-book",
   },

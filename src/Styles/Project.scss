@@ -2,10 +2,10 @@
 
 .project {
   // width: 60%;
-  padding: 30px;
+  // padding: 30px;
   height: 360px;
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
   justify-content: center;
   border-radius: 10px;
   background-color: white;
@@ -19,12 +19,25 @@
   p {
     margin-bottom: 16px;
   }
+
+  img {
+    height: 12 0%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+}
+
+.project-info {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .tech-stack {
   display: flex;
   list-style-type: none;
-  gap: 20px;
+  gap: 10px;
   flex-wrap: wrap;
 
   li {
