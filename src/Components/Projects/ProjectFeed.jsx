@@ -83,7 +83,7 @@ const ProjectFeed = () => {
             onClick={prevSlide}
             src={back}
             alt="next"
-            className="arrow"
+            className="arrow arrow-left"
           ></img>
           {projects.map((project, index) => {
             console.log("map project", project);
@@ -104,7 +104,7 @@ const ProjectFeed = () => {
             onClick={nextSlide}
             src={next}
             alt="next"
-            className="arrow"
+            className="arrow arrow-right"
           ></img>
         </div>
         <div className="carousel-btns">

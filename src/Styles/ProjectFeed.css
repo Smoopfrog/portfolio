@@ -11,6 +11,7 @@
   padding-bottom: 4rem;
   display: flex;
   background-color: bisque;
+  position: relative;
 }
 
 .hidden-project {
@@ -39,6 +40,15 @@
 .arrow {
   width: 48px;
   height: 48px;
+  position: absolute;
+}
+
+.arrow-left {
+  left: 120px;
+}
+
+.arrow-right {
+  right: 120px;
 }
 
 .arrow:hover {
@@ -54,6 +64,7 @@
   font-size: 32px;
   font-family: "Rammetto One", cursive;
   margin-bottom: 32px;
+  align-self: flex-start;
 }
 
 .carousel-btns {
