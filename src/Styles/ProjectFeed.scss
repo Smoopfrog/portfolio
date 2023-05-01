@@ -3,13 +3,17 @@
 
 .projects-container {
   width: 100%;
+  padding: 5%;
   padding-top: 4rem;
   padding-bottom: 4rem;
   display: flex;
-  background-color: bisque;
+  // background-color: bisque;
   position: relative;
 }
 
+.projects-container .project:nth-child(2n+1) {
+  flex-direction: row-reverse;
+}
 .hidden-project {
   display: none;
 }
@@ -26,7 +30,7 @@
 }
 
 .div-container {
-  width: 60%;
+  // width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
