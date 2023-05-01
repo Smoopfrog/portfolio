@@ -1,12 +1,13 @@
 @import "./Variables.scss";
 
 .project {
-  // width: 60%;
+  width: 100%;
   padding: 30px;
   height: 360px;
   display: flex;
   align-items: center;
-  gap: 44px;
+  // justify-content: center;
+  gap: 36px;
   // flex-direction: column;
   // justify-content: center;
   border-radius: 10px;
@@ -15,11 +16,14 @@
     0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1);
   margin-bottom: 36px;
   h1 {
+    text-transform: uppercase;
     margin-bottom: 24px;
   }
 
   p {
     margin-bottom: 16px;
+    text-align: center;
+    color: #525252;
   }
 
   img {
@@ -29,7 +33,7 @@
     // object-position: k;
     // border-top-left-radius: 10px;
     // border-bottom-left-radius: 10px;
-    flex: 3;
+    flex: 5;
     background-color: aqua;
     height: 100%;
     border-radius: 10px;
@@ -37,9 +41,9 @@
 }
 
 .project-info {
-  padding: 30px;
+  // padding: 30px;
   display: flex;
-  flex: 1;
+  flex: 3;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -47,14 +51,16 @@
 
 .tech-stack {
   display: flex;
+  justify-content: center;
   list-style-type: none;
   gap: 10px;
   flex-wrap: wrap;
 
   li {
-    // padding: 5px;
+    padding: 5px;
     // border: solid 1px black;
     // border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
   }
   margin-bottom: 16px;
 }
