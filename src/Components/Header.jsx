@@ -48,7 +48,7 @@ const Header = () => {
     >
       <h1>Jeff Stinson</h1>
       <nav className="header-links">
-        <button onClick={() => handleClickScroll("about")}>About Me</button>
+        <button onClick={() => handleClickScroll("about")}>About</button>
         <button onClick={() => handleClickScroll("projects")}>Projects</button>
         <button onClick={() => handleClickScroll("contact")}>Contact</button>
       </nav>

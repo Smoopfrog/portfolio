@@ -3,8 +3,9 @@ import "../../Styles/ProjectFeed.css";
 import { useState } from "react";
 // import next from "../../Assets/next.png";
 // import back from "../../Assets/back.png";
-import initiative from "../../Assets/initiative.png";
-import betbook from "../../Assets/betbook-feed.jpg";
+import initiative from "../../Assets/game-example.png";
+import betbook from "../../Assets/login-example.png";
+import frameFitness from "../../Assets/homepage-still.png";
 
 const projects = [
   {
@@ -56,6 +57,7 @@ const projects = [
       "Axios",
       "Socket.io",
     ],
+    image: frameFitness,
     url: null,
     github: "https://github.com/Smoopfrog/frame-fitness ",
   },
@@ -134,20 +136,20 @@ const ProjectFeed = () => {
           })}
         </div> */}
         {projects.map((project, index) => {
-            console.log("map project", project);
-            return (
-              // <div
-              //   key={index}
-              //   className={
-              //     index === currentIndex ? "current-project" : "hidden-project"
-              //   }
-              // >
-              //   {index === currentIndex && (
-                  <Project project={project} key={index} />
-              //   )}
-              // </div>
-            );
-          })}
+          console.log("map project", project);
+          return (
+            // <div
+            //   key={index}
+            //   className={
+            //     index === currentIndex ? "current-project" : "hidden-project"
+            //   }
+            // >
+            //   {index === currentIndex && (
+            <Project project={project} key={index} />
+            //   )}
+            // </div>
+          );
+        })}
       </div>
     </section>
   );
