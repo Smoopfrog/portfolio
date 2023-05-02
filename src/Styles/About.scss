@@ -1,10 +1,9 @@
 @import "./Variables.scss";
 
 .about {
-  width: 60%;
+  width: 90%;
   margin: 0 auto;
   padding: 4rem 0;
-
 
   h1 {
     font-family: "Rammetto One", cursive;
@@ -12,15 +11,15 @@
     line-height: 1.3;
     font-size: 2.4rem;
   }
-
 }
 
 .about-info {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  // align-items: center;
   gap: 48px;
   margin-bottom: 24px;
-  
+
   p {
     width: 50%;
     align-self: flex-start;
@@ -31,6 +30,7 @@
   display: flex;
   align-items: center;
   gap: 20px;
+  margin-bottom: 64px;
 
   a {
     align-items: center;
@@ -67,4 +67,9 @@
   transform: translateY(0%) scale(0);
   transition: all 0.4s ease-out;
   z-index: -1;
+}
+
+.about__tech-stack {
+  display: flex;
+  gap: 20px
 }
