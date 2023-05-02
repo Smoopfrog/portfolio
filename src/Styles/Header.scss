@@ -1,16 +1,18 @@
 .header {
   padding: 5px 5%;
   display: flex;
-  z-index: 1;
+  z-index: 10;
   align-items: center;
   justify-content: space-between;
   position: sticky;
   top: 0px;
-  background-color: transparent;
+  background-color: #fff;
   height: 4rem;
   transition-property: all; 
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 500ms;
+  box-shadow: 0 4px 2px -2px gray;
+
   
   h1 {
     font-size: 1.1em;

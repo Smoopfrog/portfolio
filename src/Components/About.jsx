@@ -1,12 +1,21 @@
 import "../Styles/About.css";
+import htmlLogo from "../Assets/html-5.png";
+import cssLogo from "../Assets/css.png";
+import jsLogo from "../Assets/javascript.png";
+import reactLogo from "../Assets/react.png";
+import sassLogo from "../Assets/sass.png";
+import muiLogo from "../Assets/mui.png";
+import nodeLogo from "../Assets/nodejs.png";
+import firebaseLogo from "../Assets/firebase.png";
+import psqlLogo from "../Assets/psql.png";
 
 const About = () => {
   return (
     <section className="about" id="about">
       <div className="about-info">
         <div>
-          <h1>Full-Stack Web Developer</h1>
-          {/* <h1>Stinson</h1> */}
+          <h1>Full-Stack</h1>
+          <h1>Web Developer</h1>
         </div>
         <p>
           Hello, I'm Jeff Stinson. A full-stack developer, with a background in
@@ -48,16 +57,34 @@ const About = () => {
       </div>
       <div className="about__tech-stack">
         <div>Tech Stack</div>
-        <div>HTML</div>
-        <div>CSS</div>
-        <div>Javascript</div>
-        <div>React</div>
+        <div>
+          <img src={htmlLogo} alt="HTML5" />
+        </div>
+        <div>
+          <img src={cssLogo} alt="CSS" />
+        </div>
+        <div>
+          <img src={jsLogo} alt="Javascript" />
+        </div>
+        <div>
+          <img src={reactLogo} alt="React" />
+        </div>
+        <div>
+          <img src={sassLogo} alt="Sass" />
+        </div>
+        <div>
+          <img src={muiLogo} alt="Material UI" />
+        </div>
+        <div>
+          <img src={nodeLogo} alt="NodeJS" />
+        </div>
+        <div>
+          <img src={firebaseLogo} alt="Firebase" />
+        </div>
+        <div>
+          <img src={psqlLogo} alt="Psql" />
+        </div>
         <div>React Native</div>
-        <div>SASS</div>
-        <div>Material UI</div>
-        <div>NodeJS</div>
-        <div>Firebase</div>
-        <div>PSQL</div>
       </div>
     </section>
   );

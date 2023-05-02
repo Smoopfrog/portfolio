@@ -71,5 +71,22 @@
 
 .about__tech-stack {
   display: flex;
+  align-items: center;
   gap: 20px;
+  flex-wrap: wrap;
+}
+.about__tech-stack div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  width: 64px;
+  height: 64px;
+  border: solid 1px black;
+}
+.about__tech-stack img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 48px;
+  height: auto;
 }/*# sourceMappingURL=About.css.map */
