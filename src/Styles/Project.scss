@@ -25,10 +25,15 @@
     text-align: center;
     color: #525252;
   }
+  
+  .project-img {
+    width: 50%;
+    // height: 90%;
+  }
 
   img {
     // height: 12 0%;
-    width: 200px;
+    width: 100%;
     object-fit: contain;
     // object-position: k;
     // border-top-left-radius: 10px;
@@ -73,7 +78,7 @@
     padding: 5px;
     // border: solid 1px black;
     // border-radius: 3px;
-    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   margin-bottom: 16px;
 }

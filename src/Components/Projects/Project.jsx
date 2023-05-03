@@ -4,7 +4,14 @@ const Project = ({ project }) => {
   console.log("project props", project);
   return (
     <article className="project">
-      <img src={project.image} alt={project.title} />
+      <a
+        className="project-img"
+        href={project.url ? project.url : project.github}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src={project.image} alt={project.title} />
+      </a>
       <div className="project-info">
         <h1>{project.title}</h1>
         <p>{project.description}</p>
