@@ -57,34 +57,33 @@ const About = () => {
       </div>
       <div className="about__tech-stack">
         <div>Tech Stack</div>
-        <div>
+        <div title="HTML5">
           <img src={htmlLogo} alt="HTML5" />
         </div>
-        <div>
+        <div title="CSS">
           <img src={cssLogo} alt="CSS" />
         </div>
-        <div>
+        <div title="Javascript">
           <img src={jsLogo} alt="Javascript" />
         </div>
-        <div>
+        <div title="React">
           <img src={reactLogo} alt="React" />
         </div>
-        <div>
+        <div title="Sass">
           <img src={sassLogo} alt="Sass" />
         </div>
-        <div>
+        <div title="Material UI">
           <img src={muiLogo} alt="Material UI" />
         </div>
-        <div>
+        <div title="NodeJS">
           <img src={nodeLogo} alt="NodeJS" />
         </div>
-        <div>
+        <div title="Firebase">
           <img src={firebaseLogo} alt="Firebase" />
         </div>
-        <div>
+        <div title="Psql">
           <img src={psqlLogo} alt="Psql" />
         </div>
-        <div>React Native</div>
       </div>
     </section>
   );

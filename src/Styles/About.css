@@ -82,11 +82,21 @@
   border-radius: 100%;
   width: 64px;
   height: 64px;
-  border: solid 1px black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+}
+.about__tech-stack div:first-child {
+  border-radius: 0;
+  border: none;
+  height: 36px;
+  padding-right: 16px;
+  box-shadow: none;
+  font-weight: 600;
+  width: auto;
+  border-right: solid 1px black;
 }
 .about__tech-stack img {
   -o-object-fit: contain;
      object-fit: contain;
-  width: 48px;
+  width: 36px;
   height: auto;
 }/*# sourceMappingURL=About.css.map */
