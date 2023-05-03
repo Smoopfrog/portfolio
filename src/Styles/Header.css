@@ -46,7 +46,9 @@
 .header button:active::after {
   transform: translate3d(0, 0, 0);
 }
-.header button:hover h1 {
+.header button:hover h1,
+.header a:link,
+.header a:visited {
   color: grey;
 }
 .header h1 {
@@ -55,6 +57,17 @@
   color: #333;
   font-family: "Rammetto One", cursive;
   transition: color 0.3s;
+}
+.header a:link {
+  text-decoration: none;
+  color: #333;
+}
+.header a:visited {
+  text-decoration: none;
+  color: #333;
+}
+.header a:hover {
+  color: grey;
 }
 
 .header.down {

@@ -58,6 +58,15 @@ const Header = () => {
         <button onClick={() => handleClickScroll("about")}>About</button>
         <button onClick={() => handleClickScroll("projects")}>Projects</button>
         <button onClick={() => handleClickScroll("contact")}>Contact</button>
+        <button>
+          <a
+            href="https://docs.google.com/document/d/e/2PACX-1vTqtrwCZIbWVwJQdFUo4jv7ZHw-DpTDhVrCntPZ7mOTKhYeIYPKF0VMs6TPjjZoYKdZ8TsqeWIz0KW_/pub"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Resume
+          </a>
+        </button>
       </nav>
     </header>
   );
