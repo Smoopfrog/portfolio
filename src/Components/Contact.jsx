@@ -1,6 +1,8 @@
+import "../Styles/Contact.css";
+
 const Contact = () => {
   return (
-    <section id="contact">
+    <section id="contact" className="contact">
       contact
       <div>hello</div>
     </section>

@@ -55,7 +55,7 @@ const Header = () => {
         <h1>Jeff Stinson</h1>
       </button>
       <nav className="header-links">
-        <button onClick={() => handleClickScroll("about")}>About</button>
+        <button onClick={() => handleScrollToTop()}>About</button>
         <button onClick={() => handleClickScroll("projects")}>Projects</button>
         <button onClick={() => handleClickScroll("contact")}>Contact</button>
         <button>
