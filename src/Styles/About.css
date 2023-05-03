@@ -6,9 +6,10 @@
   10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 */
 .about {
-  width: 90%;
   margin: 0 auto;
-  padding: 4rem 0;
+  padding: 4rem;
+  background-color: rgb(228, 228, 228);
+  height: 100vh;
 }
 .about h1 {
   font-family: "Rammetto One", cursive;
