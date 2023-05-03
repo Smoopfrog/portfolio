@@ -3,11 +3,16 @@ import htmlLogo from "../Assets/html-5.png";
 import cssLogo from "../Assets/css.png";
 import jsLogo from "../Assets/javascript.png";
 import reactLogo from "../Assets/react.png";
+import reactNativeLogo from "../Assets/react-native.png";
+import reduxLogo from "../Assets/redux.png"
+import expoLogo from "../Assets/expo.png"
 import sassLogo from "../Assets/sass.png";
 import muiLogo from "../Assets/mui.png";
 import nodeLogo from "../Assets/nodejs.png";
 import firebaseLogo from "../Assets/firebase.png";
 import psqlLogo from "../Assets/psql.png";
+import gitLogo from "../Assets/git.png";
+
 
 const About = () => {
   return (
@@ -69,6 +74,15 @@ const About = () => {
         <div title="React">
           <img src={reactLogo} alt="React" />
         </div>
+        <div title="React Native">
+          <img src={reactNativeLogo} alt="React Native" />
+        </div>
+        <div title="Redux">
+          <img src={reduxLogo} alt="Redux" />
+        </div>
+        <div title="Expo">
+          <img src={expoLogo} alt="Expo" />
+        </div>
         <div title="Sass">
           <img src={sassLogo} alt="Sass" />
         </div>
@@ -83,6 +97,9 @@ const About = () => {
         </div>
         <div title="Psql">
           <img src={psqlLogo} alt="Psql" />
+        </div>
+        <div title="Git">
+          <img src={gitLogo} alt="Git" />
         </div>
       </div>
     </section>
