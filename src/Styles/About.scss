@@ -54,6 +54,7 @@
   width: 40px;
   height: 40px;
   transition: all 0.4s ease-out;
+  z-index: 1;
 }
 
 .social-anchor-circle {
@@ -68,7 +69,6 @@
   height: 40px;
   transform: translateY(0%) scale(0);
   transition: all 0.4s ease-out;
-  z-index: -1;
 }
 
 .about__tech-stack {
@@ -84,6 +84,7 @@
     border-radius: 100%;
     width: 64px;
     height: 64px;
+    background-color: white;
     // border: solid 1px black;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
   }
@@ -96,6 +97,8 @@
     box-shadow: none;
     font-weight: 600;
     width: auto;
+    background-color: transparent;
+
     border-right: solid 1px black;
   }
 
