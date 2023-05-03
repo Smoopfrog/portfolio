@@ -8,26 +8,10 @@
   top: 0px;
   background-color: #fff;
   height: 4rem;
-  transition-property: all; 
+  transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 500ms;
   box-shadow: 0 4px 2px -2px gray;
-
-  
-  h1 {
-    font-size: 1.1em;
-    font-weight: 700;
-    color: #333;
-  }
-}
-
-.header.down {
-  top: -6rem;
-}
-
-.header-links {
-  display: flex;
-  gap: 20px;
 
   button {
     border: none;
@@ -63,4 +47,24 @@
   button:active::after {
     transform: translate3d(0, 0, 0);
   }
+
+  button:hover h1 {
+    color: hotpink;
+  }
+
+  h1 {
+    font-size: 1.1em;
+    font-weight: 700;
+    color: #333;
+    font-family: "Rammetto One", cursive;
+  }
+}
+
+.header.down {
+  top: -6rem;
+}
+
+.header-links {
+  display: flex;
+  gap: 20px;
 }

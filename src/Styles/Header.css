@@ -12,23 +12,9 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 500ms;
   box-shadow: 0 4px 2px -2px gray;
-}
-.header h1 {
-  font-size: 1.1em;
-  font-weight: 700;
-  color: #333;
-}
-
-.header.down {
-  top: -6rem;
-}
-
-.header-links {
-  display: flex;
-  gap: 20px;
   /* Fade in */
 }
-.header-links button {
+.header button {
   border: none;
   background-color: transparent;
   font-size: 1em;
@@ -39,11 +25,11 @@
   color: #333;
   overflow: hidden;
 }
-.header-links button:hover {
+.header button:hover {
   color: hotpink;
   cursor: pointer;
 }
-.header-links button::after {
+.header button::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -55,7 +41,25 @@
   transition: opacity 300ms, transform 300ms;
   transform: translate3d(-100%, 0, 0);
 }
-.header-links button:hover::after,
-.header-links button:active::after {
+.header button:hover::after,
+.header button:active::after {
   transform: translate3d(0, 0, 0);
+}
+.header button:hover h1 {
+  color: hotpink;
+}
+.header h1 {
+  font-size: 1.1em;
+  font-weight: 700;
+  color: #333;
+  font-family: "Rammetto One", cursive;
+}
+
+.header.down {
+  top: -6rem;
+}
+
+.header-links {
+  display: flex;
+  gap: 20px;
 }/*# sourceMappingURL=Header.css.map */

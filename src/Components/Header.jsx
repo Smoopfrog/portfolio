@@ -1,6 +1,10 @@
 import "../Styles/Header.css";
 import { useEffect, useState } from "react";
 const Header = () => {
+  const handleScrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   const handleClickScroll = (id) => {
     const element = document.getElementById(id);
 
@@ -8,7 +12,7 @@ const Header = () => {
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
-  
+
   function useScrollDirection() {
     const [scrollDirection, setScrollDirection] = useState(null);
 
@@ -28,7 +32,7 @@ const Header = () => {
       };
 
       window.addEventListener("scroll", updateScrollDirection); // add event listener
-      
+
       return () => {
         window.removeEventListener("scroll", updateScrollDirection); // clean up
       };
@@ -42,11 +46,14 @@ const Header = () => {
   return (
     // <header className="header">
     <header
+      id="header"
       className={`header sticky ${
         scrollDirection === "down" ? "-top-24 down" : "top-0"
       } h-24 bg-blue-200`}
     >
-      <h1>Jeff Stinson</h1>
+      <button onClick={() => handleScrollToTop()}>
+        <h1>Jeff Stinson</h1>
+      </button>
       <nav className="header-links">
         <button onClick={() => handleClickScroll("about")}>About</button>
         <button onClick={() => handleClickScroll("projects")}>Projects</button>
