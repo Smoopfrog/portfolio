@@ -27,13 +27,17 @@
 }
 .project .project-img {
   width: 50%;
+  flex: 5;
 }
 .project img {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-  flex: 5;
   border-radius: 10px;
+  transition: all 1s ease;
+}
+.project img:hover {
+  box-shadow: 0 50px 100px rgba(50, 50, 93, 0.05), 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .project-info {

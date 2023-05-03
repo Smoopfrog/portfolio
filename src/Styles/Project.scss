@@ -15,6 +15,7 @@
   box-shadow: 0 50px 100px rgba(50, 50, 93, 0.05),
     0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1);
   margin-bottom: 36px;
+
   h1 {
     text-transform: uppercase;
     margin-bottom: 24px;
@@ -29,8 +30,9 @@
   .project-img {
     width: 50%;
     // height: 90%;
-  }
+    flex: 5;
 
+  }
   img {
     // height: 12 0%;
     width: 100%;
@@ -38,10 +40,15 @@
     // object-position: k;
     // border-top-left-radius: 10px;
     // border-bottom-left-radius: 10px;
-    flex: 5;
     // background-color: aqua;
     // height: 100%;
     border-radius: 10px;
+    transition: all 1s ease;
+  }
+  
+  img:hover {
+    box-shadow: 0 50px 100px rgba(50, 50, 93, 0.05),
+    0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1);
   }
 }
 
