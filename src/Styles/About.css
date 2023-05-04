@@ -16,10 +16,11 @@
   height: auto;
   border: solid 1px black;
   border-radius: 40%;
-  margin-bottom: 48px;
 }
 .about .about-container {
   display: flex;
+  align-items: center;
+  margin-bottom: 48px;
 }
 .about h1 {
   font-family: "Rammetto One", cursive;
@@ -31,11 +32,11 @@
 .about-info {
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 24px;
   margin-bottom: 24px;
 }
 .about-info h1:first-child {
-  margin-top: 48px;
+  margin-top: 36px;
 }
 .about-info p {
   align-self: flex-start;
@@ -45,7 +46,6 @@
   display: flex;
   align-items: center;
   gap: 20px;
-  margin-bottom: 64px;
 }
 .about-links a {
   align-items: center;
