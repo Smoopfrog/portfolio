@@ -16,6 +16,7 @@
   height: auto;
   border: solid 1px black;
   border-radius: 40%;
+  animation: fadeInRight 1.5s both;
 }
 .about .about-container {
   display: flex;
@@ -29,11 +30,32 @@
   font-size: 2.4rem;
 }
 
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 .about-info {
   display: flex;
   flex-direction: column;
   gap: 24px;
   margin-bottom: 24px;
+  animation: fadeInLeft 2s both;
 }
 .about-info h1:first-child {
   margin-top: 36px;
@@ -46,6 +68,7 @@
   display: flex;
   align-items: center;
   gap: 20px;
+  animation: fadeInLeft 2s both;
 }
 .about-links a {
   align-items: center;
