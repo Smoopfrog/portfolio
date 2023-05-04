@@ -118,35 +118,34 @@
   display: flex;
 }
 
-.slider:before {
+.slider:before,
+.slider:after {
   position: absolute;
   top: 0;
-  left: 0;
+  width: 80px;
   height: 100%;
-  width: 100px;
+  content: "";
+  z-index: 2;
+}
+
+.slider:before {
+  left: 0;
   background: linear-gradient(
     to left,
     rgba(255, 255, 255, 0),
     rgb(228, 228, 228)
   );
-  z-index: 2;
-  content: "";
 }
 
 .slider:after {
-  position: absolute;
-  top: 0;
   right: 0;
-  height: 100%;
-  width: 100px;
   background: linear-gradient(
     to right,
     rgba(255, 255, 255, 0),
     rgb(228, 228, 228)
   );
-  z-index: 2;
-  content: "";
 }
+
 .slider .slide-track {
   animation: scroll 20s linear infinite;
   display: flex;
