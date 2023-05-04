@@ -1,4 +1,4 @@
-import "../Styles/About.css";
+import "../Styles/Home.css";
 import htmlLogo from "../Assets/html-5.png";
 import cssLogo from "../Assets/css.png";
 import jsLogo from "../Assets/javascript.png";
@@ -14,13 +14,13 @@ import psqlLogo from "../Assets/psql.png";
 import gitLogo from "../Assets/git.png";
 import me from "../Assets/me.jpeg";
 
-const About = () => {
+const Home = () => {
   return (
-    <section className="about" id="about">
-      <div className="about-container">
+    <section className="home" id="home">
+      <div className="home-container">
         <div>
-          <div className="about-info">
-            <div className="about-title">
+          <div className="home-info">
+            <div className="home-title">
               <h1>Full-Stack</h1>
               <h1>Web Developer</h1>
             </div>
@@ -32,7 +32,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="about-links">
+          <div className="home-links">
             <a
               href="https://github.com/Smoopfrog"
               target="_blank"
@@ -66,13 +66,13 @@ const About = () => {
           </div>
         </div>
         <img
-          className="about-picture"
+          className="home-picture"
           src={me}
           alt="The most handsome man in the world"
         />
       </div>
-      <div className="about_tech-stack">
-        <div className="about_tech-stack-title">Tech Stack</div>
+      <div className="home_tech-stack">
+        <div className="home_tech-stack-title">Tech Stack</div>
         <div className="slider">
           <div className="slide-track">
             <div className="slide" title="HTML5">
@@ -162,4 +162,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Home;

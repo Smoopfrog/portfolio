@@ -1,5 +1,5 @@
 import "./App.css";
-import About from "./Components/About";
+import Home from "./Components/Home";
 import Contact from "./Components/Contact";
 // import Body from "./Components/Body";
 import Header from "./Components/Header";
@@ -10,7 +10,7 @@ const App = () => {
   return (
     <div className="App">
       <Header />
-      <About />
+      <Home />
       <ProjectFeed />
       <Contact />
     </div>
