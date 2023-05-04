@@ -7,6 +7,18 @@
   background-color: rgb(228, 228, 228);
   height: 100vh;
 
+  .about-picture {
+    width: 360px;
+    height: auto;
+    border: solid 1px black;
+    border-radius: 40%;
+    margin-bottom: 48px;
+  }
+
+  .about-container{
+    display: flex;
+  }
+
   h1 {
     font-family: "Rammetto One", cursive;
     color: $text-color;
@@ -16,7 +28,7 @@
 }
 
 .about-title {
-  width: 50%;
+  // width: 50%;
 }
 
 .about-info {
@@ -25,13 +37,13 @@
   // align-items: center;
   gap: 48px;
   margin-bottom: 24px;
-  
+
   h1:first-child {
     margin-top: 48px;
   }
 
   p {
-    width: 50%;
+    // width: 50%;
     align-self: flex-start;
   }
 }
