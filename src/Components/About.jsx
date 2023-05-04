@@ -71,47 +71,91 @@ const About = () => {
           alt="The most handsome man in the world"
         />
       </div>
-
-      <div className="about__tech-stack">
-        <div>Tech Stack</div>
-        <div title="HTML5">
-          <img src={htmlLogo} alt="HTML5" />
-        </div>
-        <div title="CSS">
-          <img src={cssLogo} alt="CSS" />
-        </div>
-        <div title="Javascript">
-          <img src={jsLogo} alt="Javascript" />
-        </div>
-        <div title="React">
-          <img src={reactLogo} alt="React" />
-        </div>
-        <div title="React Native">
-          <img src={reactNativeLogo} alt="React Native" />
-        </div>
-        <div title="Redux">
-          <img src={reduxLogo} alt="Redux" />
-        </div>
-        <div title="Expo">
-          <img src={expoLogo} alt="Expo" />
-        </div>
-        <div title="Sass">
-          <img src={sassLogo} alt="Sass" />
-        </div>
-        <div title="Material UI">
-          <img src={muiLogo} alt="Material UI" />
-        </div>
-        <div title="NodeJS">
-          <img src={nodeLogo} alt="NodeJS" />
-        </div>
-        <div title="Firebase">
-          <img src={firebaseLogo} alt="Firebase" />
-        </div>
-        <div title="Psql">
-          <img src={psqlLogo} alt="Psql" />
-        </div>
-        <div title="Git">
-          <img src={gitLogo} alt="Git" />
+      <div className="about_tech-stack">
+        <div className="about_tech-stack-title">Tech Stack</div>
+        <div className="slider">
+          <div className="slide-track">
+            <div className="slide" title="HTML5">
+              <img src={htmlLogo} alt="HTML5" />
+            </div>
+            <div className="slide" title="CSS">
+              <img src={cssLogo} alt="CSS" />
+            </div>
+            <div className="slide" title="Javascript">
+              <img src={jsLogo} alt="Javascript" />
+            </div>
+            <div className="slide" title="React">
+              <img src={reactLogo} alt="React" />
+            </div>
+            <div className="slide" title="React Native">
+              <img src={reactNativeLogo} alt="React Native" />
+            </div>
+            <div className="slide" title="Redux">
+              <img src={reduxLogo} alt="Redux" />
+            </div>
+            <div className="slide" title="Expo">
+              <img src={expoLogo} alt="Expo" />
+            </div>
+            <div className="slide" title="Sass">
+              <img src={sassLogo} alt="Sass" />
+            </div>
+            <div className="slide" title="Material UI">
+              <img src={muiLogo} alt="Material UI" />
+            </div>
+            <div className="slide" title="NodeJS">
+              <img src={nodeLogo} alt="NodeJS" />
+            </div>
+            <div className="slide" title="Firebase">
+              <img src={firebaseLogo} alt="Firebase" />
+            </div>
+            <div className="slide" title="Psql">
+              <img src={psqlLogo} alt="Psql" />
+            </div>
+            <div className="slide" title="Git">
+              <img src={gitLogo} alt="Git" />
+            </div>
+          </div>
+          <div className="slide-track">
+            <div className="slide" title="HTML5">
+              <img src={htmlLogo} alt="HTML5" />
+            </div>
+            <div className="slide" title="CSS">
+              <img src={cssLogo} alt="CSS" />
+            </div>
+            <div className="slide" title="Javascript">
+              <img src={jsLogo} alt="Javascript" />
+            </div>
+            <div className="slide" title="React">
+              <img src={reactLogo} alt="React" />
+            </div>
+            <div className="slide" title="React Native">
+              <img src={reactNativeLogo} alt="React Native" />
+            </div>
+            <div className="slide" title="Redux">
+              <img src={reduxLogo} alt="Redux" />
+            </div>
+            <div className="slide" title="Expo">
+              <img src={expoLogo} alt="Expo" />
+            </div>
+            <div className="slide" title="Sass">
+              <img src={sassLogo} alt="Sass" />
+            </div>
+            <div className="slide" title="Material UI">
+              <img src={muiLogo} alt="Material UI" />
+            </div>
+            <div className="slide" title="NodeJS">
+              <img src={nodeLogo} alt="NodeJS" />
+            </div>
+            <div className="slide" title="Firebase">
+              <img src={firebaseLogo} alt="Firebase" />
+            </div>
+            <div className="slide" title="Psql">
+              <img src={psqlLogo} alt="Psql" />
+            </div>
+            <div className="slide" title="Git">
+              <img src={gitLogo} alt="Git" />
+            </div>
+          </div>
         </div>
       </div>
     </section>
