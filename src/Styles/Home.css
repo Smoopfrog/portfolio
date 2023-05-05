@@ -7,7 +7,7 @@
 */
 .home {
   margin: 0 auto;
-  padding: 4rem;
+  padding: 2rem;
   background-color: rgb(228, 228, 228);
   height: 100vh;
 }
@@ -19,7 +19,7 @@
 }
 
 .home-picture {
-  width: 360px;
+  width: 90%;
   height: auto;
   border: solid 1px black;
   border-radius: 40%;
@@ -28,7 +28,7 @@
 
 .home-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
   margin-bottom: 48px;
 }
@@ -194,12 +194,54 @@
   height: auto;
 }
 
+@media screen and (min-width: 576px) {
+  .home-picture {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .home {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .home h1 {
+    font-size: 3rem;
+  }
+  .home p {
+    font-size: 1.6rem;
+    width: 90%;
+    color: #474747;
+  }
+  .social-icon {
+    width: 60px;
+    height: 60px;
+  }
+  .social-anchor-circle {
+    width: 60px;
+    height: 60px;
+  }
+  .home-container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .home_tech-stack {
+    width: 90%;
+  }
+  .home-picture {
+    width: 50%;
+  }
+}
 @media screen and (min-width: 992px) {
   .home {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 4rem;
   }
   .home h1 {
     font-size: 4rem;
@@ -218,7 +260,7 @@
     height: 80px;
   }
   .home-picture {
-    width: 640px;
+    width: 40%;
   }
   .home-container {
     width: 80%;
