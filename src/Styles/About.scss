@@ -2,21 +2,58 @@
   padding: 4rem;
   background-color: azure;
   height: 100vh;
+  gap: 24px;
   display: flex;
   align-items: center;
+
+  h1 {
+    font-family: "Rammetto One", cursive;
+  }
 }
 
 .about-image {
-  img {
-    width: 90%;
+  position: relative;
+
+  .coding-img {
+    width: 100%;
     height: auto;
     object-fit: contain;
     border-radius: 50px;
   }
 }
 
+.about-hire {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 1000px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transform: translate(30%, -60%);
+  right: 0;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
+
+.background-img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  animation: spin 15s linear infinite;
+}
+
 .about-info {
   display: flex;
   flex-direction: column;
-  gap: 16px
+  gap: 16px;
 }
