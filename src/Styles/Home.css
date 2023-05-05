@@ -223,7 +223,6 @@
     height: 60px;
   }
   .home-container {
-    width: 90%;
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -263,13 +262,12 @@
     width: 40%;
   }
   .home-container {
-    width: 80%;
     display: flex;
     justify-content: center;
     flex-direction: row;
   }
   .home_tech-stack {
-    width: 80%;
+    width: 100%;
   }
   .slider .slide-track {
     width: 1232px;

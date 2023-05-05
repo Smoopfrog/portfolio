@@ -4,7 +4,7 @@
   padding: 4rem;
   background-color: azure;
   height: 100vh;
-  gap: 24px;
+  gap: 36px;
   display: flex;
   align-items: center;
 
@@ -15,7 +15,8 @@
 
 .about-image {
   position: relative;
-
+  margin-right: 36px;
+  
   .coding-img {
     width: 100%;
     height: auto;
