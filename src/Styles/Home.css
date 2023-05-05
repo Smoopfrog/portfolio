@@ -112,10 +112,10 @@
   display: flex;
   align-items: center;
 }
-.home_tech-stack .home_tech-stack-title {
+
+.home_tech-stack-title {
   border-radius: 0;
   border: none;
-  height: 36px;
   padding-right: 16px;
   box-shadow: none;
   font-weight: 600;
@@ -228,5 +228,24 @@
   }
   .home_tech-stack {
     width: 80%;
+  }
+  .slider .slide-track {
+    width: 1652px;
+  }
+  .slide-track .slide {
+    width: 98px;
+    height: 98px;
+  }
+  .slide-track div:first-child {
+    margin-left: 20px;
+  }
+  .slide-track img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 64px;
+    height: auto;
+  }
+  .home_tech-stack-title {
+    font-size: 2rem;
   }
 }/*# sourceMappingURL=Home.css.map */
