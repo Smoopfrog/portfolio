@@ -18,7 +18,7 @@ const Home = () => {
   return (
     <section className="home" id="home">
       <div className="home-container">
-        <div>
+        <div className="home-profile">
           <div className="home-info">
             <div className="home-title">
               <h1>Full-Stack</h1>
