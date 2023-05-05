@@ -227,7 +227,7 @@
     align-items: center;
 
     h1 {
-      font-size: 3rem;
+      font-size:3rem;
     }
 
     p {
@@ -271,23 +271,23 @@
     padding: 4rem;
 
     h1 {
-      font-size: 4rem;
+      font-size: 2.5rem;
     }
 
     p {
-      font-size: 1.6rem;
+      font-size: 1.2rem;
       width: 90%;
       color: #474747;
     }
 
     .social-icon {
-      width: 80px;
-      height: 80px;
+      width: 60px;
+      height: 60px;
     }
 
     .social-anchor-circle {
-      width: 80px;
-      height: 80px;
+      width: 60px;
+      height: 60px;
     }
   }
 
@@ -307,13 +307,13 @@
   }
 
   .slider .slide-track {
-    width: calc(118px * 14);
+    width: calc(88px * 14);
   }
 
   .slide-track {
     .slide {
-      width: 98px;
-      height: 98px;
+      width: 64px;
+      height: 64px;
     }
 
     div:first-child {
@@ -322,13 +322,13 @@
 
     img {
       object-fit: contain;
-      width: 64px;
+      width: 40px;
       height: auto;
     }
   }
 
   .home_tech-stack-title {
-    font-size: 2rem;
+    font-size: 1.3rem;
   }
 }
 
