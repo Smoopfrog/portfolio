@@ -13,7 +13,7 @@ const Header = () => {
     }
   };
 
-  function useScrollDirection() {
+  const useScrollDirection = () => {
     const [scrollDirection, setScrollDirection] = useState(null);
 
     useEffect(() => {
@@ -39,12 +39,11 @@ const Header = () => {
     }, [scrollDirection]);
 
     return scrollDirection;
-  }
+  };
 
   const scrollDirection = useScrollDirection();
 
   return (
-    // <header className="header">
     <header
       id="header"
       className={`header sticky ${

@@ -14,7 +14,6 @@ const About = () => {
         />
         <div className="about-hire">
           <img className="background-img" src={frontEnd} alt="" /> Hire me
-          please
           <br /> Im desperate
         </div>
       </div>

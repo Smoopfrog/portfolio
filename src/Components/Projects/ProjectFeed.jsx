@@ -64,91 +64,12 @@ const projects = [
 ];
 
 const ProjectFeed = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const length = projects.length;
-
-  const nextSlide = () => {
-    setCurrentIndex(currentIndex === length - 1 ? 0 : currentIndex + 1);
-  };
-
-  const prevSlide = () => {
-    setCurrentIndex(currentIndex === 0 ? length - 1 : currentIndex - 1);
-  };
-
-  const changeIndex = (index) => {
-    setCurrentIndex(index);
-  };
-
-  console.log("currentIndex", currentIndex);
   return (
     <section className="projects-container" id="projects">
       <div className="div-container">
         <h1 className="section-title">Projects</h1>
-        {/* <div className="carousel">
-          <img
-            onClick={prevSlide}
-            src={back}
-            alt="next"
-            className="arrow arrow-left"
-          ></img>
-          {projects.map((project, index) => {
-            console.log("map project", project);
-            return (
-              <div
-                key={index}
-                className={
-                  index === currentIndex ? "current-project" : "hidden-project"
-                }
-              >
-                {index === currentIndex && (
-                  <Project project={project} key={index} />
-                )}
-              </div>
-            );
-          })}
-          <img
-            onClick={nextSlide}
-            src={next}
-            alt="next"
-            className="arrow arrow-right"
-          ></img>
-        </div>
-        <div className="carousel-btns">
-          {projects.map((project, index) => {
-            console.log("map project", project);
-            return (
-              <div
-                className="circle-container"
-                key={index}
-                onClick={() => changeIndex(index)}
-              >
-                <svg
-                  className={
-                    index === currentIndex ? " circle black" : "circle grey"
-                  }
-                  viewBox="0 0 100 100"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle cx="50" cy="50" r="50" />
-                </svg>
-              </div>
-            );
-          })}
-        </div> */}
         {projects.map((project, index) => {
-          console.log("map project", project);
-          return (
-            // <div
-            //   key={index}
-            //   className={
-            //     index === currentIndex ? "current-project" : "hidden-project"
-            //   }
-            // >
-            //   {index === currentIndex && (
-            <Project project={project} key={index} />
-            //   )}
-            // </div>
-          );
+          return <Project project={project} key={index} />;
         })}
       </div>
     </section>
