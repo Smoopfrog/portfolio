@@ -45,15 +45,22 @@
 .arrow {
   width: 48px;
   height: 48px;
+  top: 50%;
   position: absolute;
+  background-color: transparent;
+  border: none;
+}
+.arrow img {
+  width: 100%;
+  height: auto;
 }
 
 .arrow-left {
-  left: 120px;
+  left: 24px;
 }
 
 .arrow-right {
-  right: 120px;
+  right: 24px;
 }
 
 .arrow:hover {

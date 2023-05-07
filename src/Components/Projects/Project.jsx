@@ -1,8 +1,8 @@
 import "../../Styles/Project.css";
 
-const Project = ({ project }) => {
+const Project = ({ project, id }) => {
   return (
-    <article className="project">
+    <article id={id} className="project">
       <a
         className="project-img"
         href={project.url ? project.url : project.github}

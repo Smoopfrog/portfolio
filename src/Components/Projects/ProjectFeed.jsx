@@ -1,8 +1,8 @@
 import Project from "./Project";
 import "../../Styles/ProjectFeed.css";
 import { useState } from "react";
-// import next from "../../Assets/next.png";
-// import back from "../../Assets/back.png";
+import next from "../../Assets/next.png";
+import back from "../../Assets/back.png";
 import initiative from "../../Assets/game-example.png";
 import betbook from "../../Assets/login-example.png";
 import frameFitness from "../../Assets/homepage-still.png";
@@ -64,12 +64,32 @@ const projects = [
 ];
 
 const ProjectFeed = () => {
+  const handleClickScroll = (id) => {
+    const element = document.getElementById(id);
+
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth",  block: 'nearest', inline: 'center'  });
+    }
+  };
+
   return (
     <section className="projects" id="projects">
       <h1 className="section-title">Projects</h1>
+      <button
+        onClick={() => handleClickScroll(0)}
+        className=" arrow arrow-left"
+      >
+        <img src={back} alt="back" />
+      </button>
+      <button
+        onClick={() => handleClickScroll(2)}
+        className=" arrow arrow-right"
+      >
+        <img src={next} alt="next" />
+      </button>
       <div className="projects-container">
         {projects.map((project, index) => {
-          return <Project project={project} key={index} />;
+          return <Project id={index} project={project} key={index} />;
         })}
       </div>
     </section>
