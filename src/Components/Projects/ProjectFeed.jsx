@@ -65,9 +65,9 @@ const projects = [
 
 const ProjectFeed = () => {
   return (
-    <section className="projects-container" id="projects">
-      <div className="div-container">
-        <h1 className="section-title">Projects</h1>
+    <section className="projects" id="projects">
+      <h1 className="section-title">Projects</h1>
+      <div className="projects-container">
         {projects.map((project, index) => {
           return <Project project={project} key={index} />;
         })}
