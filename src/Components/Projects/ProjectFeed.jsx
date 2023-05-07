@@ -64,32 +64,91 @@ const projects = [
 ];
 
 const ProjectFeed = () => {
-  const handleClickScroll = (id) => {
-    const element = document.getElementById(id);
+  const [carouselIndex, setCarouselIndex] = useState(0);
+
+  const handleClickScroll = (index) => {
+    const element = document.getElementById(index);
 
     if (element) {
-      element.scrollIntoView({ behavior: "smooth",  block: 'nearest', inline: 'center'  });
+      setCarouselIndex(index);
+
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "nearest",
+        inline: "center",
+      });
     }
   };
+
+  const handleNextScroll = () => {
+    const element = document.getElementById(carouselIndex + 1);
+
+    if (element) {
+      setCarouselIndex(carouselIndex + 1);
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "nearest",
+        inline: "center",
+      });
+    }
+  };
+
+  const handleBackScroll = () => {
+    const element = document.getElementById(carouselIndex - 1);
+
+    if (element) {
+      setCarouselIndex(carouselIndex - 1);
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "nearest",
+        inline: "center",
+      });
+    }
+  };
+
+  // const element = document.getElementById(id);
+
+  // if (element) {
+  //   element.scrollIntoView({
+  //     behavior: "smooth",
+  //     block: "nearest",
+  //     inline: "center",
+  //   });
+  // }
 
   return (
     <section className="projects" id="projects">
       <h1 className="section-title">Projects</h1>
-      <button
-        onClick={() => handleClickScroll(0)}
-        className=" arrow arrow-left"
-      >
+      <button onClick={handleBackScroll} className=" arrow arrow-left">
         <img src={back} alt="back" />
       </button>
-      <button
-        onClick={() => handleClickScroll(2)}
-        className=" arrow arrow-right"
-      >
+      <button onClick={handleNextScroll} className=" arrow arrow-right">
         <img src={next} alt="next" />
       </button>
       <div className="projects-container">
         {projects.map((project, index) => {
           return <Project id={index} project={project} key={index} />;
+        })}
+      </div>
+      <div className="carousel-btns">
+        {projects.map((project, index) => {
+          return (
+            <div
+              className="circle-container"
+              key={index}
+              onClick={() => handleClickScroll(index)}
+            >
+              <svg
+                className={
+                  index === carouselIndex ? " circle black" : "circle grey"
+                }
+                viewBox="0 0 100 100"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="50" cy="50" r="50" />
+              </svg>
+            </div>
+          );
         })}
       </div>
     </section>

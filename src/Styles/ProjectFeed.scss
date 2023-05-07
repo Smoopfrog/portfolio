@@ -35,6 +35,7 @@
   scroll-snap-type: x mandatory;
   scroll-snap-align: center;
   gap: 30px;
+  margin-bottom: 24px;
 }
 
 .projects-container::-webkit-scrollbar {
@@ -56,11 +57,11 @@
 }
 
 .arrow-left {
-  left: 24px;
+  left: 1rem;
 }
 
 .arrow-right {
-  right: 24px;
+  right: 1rem;
 }
 
 .arrow:hover {
