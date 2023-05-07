@@ -29,7 +29,6 @@
 }
 
 .projects-container {
-  // width: 2000px;
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
@@ -68,6 +67,10 @@
   cursor: pointer;
 }
 
+.disabled:hover {
+  cursor: auto;
+}
+
 .arrow:active {
   opacity: 50%;
 }
@@ -93,11 +96,15 @@
 
 .circle:hover {
   cursor: pointer;
-  stroke: pink;
-  fill: pink;
+  stroke: grey;
+  fill: grey;
 }
 
 .grey {
   fill: rgb(179, 177, 177);
   stroke: rgb(179, 177, 177);
+}
+
+.disabled {
+  opacity: 50%;
 }

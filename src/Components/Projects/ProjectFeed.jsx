@@ -65,6 +65,15 @@ const projects = [
 
 const ProjectFeed = () => {
   const [carouselIndex, setCarouselIndex] = useState(0);
+  const length = projects.length;
+
+  if (carouselIndex === 0) {
+    console.log("Paint it grey");
+  }
+
+  if (carouselIndex === length - 1) {
+    console.log("Paint it grey");
+  }
 
   const handleClickScroll = (index) => {
     const element = document.getElementById(index);
@@ -106,23 +115,23 @@ const ProjectFeed = () => {
     }
   };
 
-  // const element = document.getElementById(id);
-
-  // if (element) {
-  //   element.scrollIntoView({
-  //     behavior: "smooth",
-  //     block: "nearest",
-  //     inline: "center",
-  //   });
-  // }
-
   return (
     <section className="projects" id="projects">
       <h1 className="section-title">Projects</h1>
-      <button onClick={handleBackScroll} className=" arrow arrow-left">
+      <button
+        onClick={handleBackScroll}
+        className={`arrow arrow-left ${
+          carouselIndex === 0 && "disabled"
+        }`}
+      >
         <img src={back} alt="back" />
       </button>
-      <button onClick={handleNextScroll} className=" arrow arrow-right">
+      <button
+        onClick={handleNextScroll}
+        className={`arrow arrow-right ${
+          carouselIndex === length - 1 && "disabled"
+        }`}
+      >
         <img src={next} alt="next" />
       </button>
       <div className="projects-container">
