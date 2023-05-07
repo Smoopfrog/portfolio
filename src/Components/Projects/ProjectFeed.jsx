@@ -61,6 +61,14 @@ const projects = [
     url: null,
     github: "https://github.com/Smoopfrog/frame-fitness ",
   },
+  {
+    title: "Front-end Mentorship things",
+    description: "A collection of Front-end Mentorship Projects",
+    tech: ["HTML", "CSS", "Javascript"],
+    image: frameFitness,
+    url: null,
+    github: "https://github.com/Smoopfrog/frame-fitness ",
+  },
 ];
 
 const ProjectFeed = () => {
@@ -120,9 +128,7 @@ const ProjectFeed = () => {
       <h1 className="section-title">Projects</h1>
       <button
         onClick={handleBackScroll}
-        className={`arrow arrow-left ${
-          carouselIndex === 0 && "disabled"
-        }`}
+        className={`arrow arrow-left ${carouselIndex === 0 && "disabled"}`}
       >
         <img src={back} alt="back" />
       </button>

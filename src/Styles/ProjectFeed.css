@@ -11,10 +11,6 @@
   position: relative;
 }
 
-.projects .project:nth-child(2n+1) {
-  flex-direction: row-reverse;
-}
-
 .hidden-project {
   display: none;
 }
