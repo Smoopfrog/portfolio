@@ -123,6 +123,10 @@ const ProjectFeed = () => {
     }
   };
 
+
+  const handleScroll = () => {
+    console.log('scroll')
+  }
   return (
     <section className="projects" id="projects">
       <h1 className="section-title">Projects</h1>
@@ -140,7 +144,7 @@ const ProjectFeed = () => {
       >
         <img src={next} alt="next" />
       </button>
-      <div className="projects-container">
+      <div className="projects-container" onScroll={handleScroll}>
         {projects.map((project, index) => {
           return <Project id={index} project={project} key={index} />;
         })}
