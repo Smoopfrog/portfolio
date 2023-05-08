@@ -119,6 +119,7 @@ const Home = () => {
       <div className="home-picture">
         <img
           className="home-picture"
+          loading="lazy"
           src={me}
           alt="The most handsome man in the world"
         />

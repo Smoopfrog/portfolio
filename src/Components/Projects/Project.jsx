@@ -6,7 +6,6 @@ const Project = ({ project, id, setCarouselIndex }) => {
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
-
       const entry = entries[0];
       if (entry.isIntersecting) {
         setCarouselIndex(Number(entry.target.id));
@@ -50,7 +49,7 @@ const Project = ({ project, id, setCarouselIndex }) => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img src={project.image} alt={project.title} />
+        <img loading="lazy" src={project.image} alt={project.title} />
       </a>
     </article>
   );
