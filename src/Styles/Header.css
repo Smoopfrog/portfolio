@@ -78,7 +78,7 @@
   gap: 48px;
   height: 100vh;
   width: 100vw;
-  padding-top: 25%;
+  padding-top: 20%;
   font-size: 36px;
   background-color: azure;
   transform: translateX(0);
@@ -118,6 +118,7 @@
     justify-content: center;
     flex-direction: row;
     gap: 36px;
+    padding-top: 0;
     height: auto;
     width: auto;
     background-color: transparent;

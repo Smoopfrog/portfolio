@@ -61,8 +61,8 @@
 
 .project-title {
   display: flex;
-  align-items: center;
-  gap: 12px;
+  flex-direction: column;
+  gap: 0px;
   margin-bottom: 8px;
 }
 
