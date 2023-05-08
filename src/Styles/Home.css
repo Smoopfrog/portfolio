@@ -9,6 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column-reverse;
   padding: 4rem;
   background-color: azure;
 }
@@ -16,13 +17,14 @@
 .home-info {
   display: flex;
   flex-direction: column;
-  max-width: 40vw;
+  max-width: 80vw;
 }
 .home-info h1 {
   font-family: "Rammetto One", cursive;
   color: #333;
   line-height: 1.3;
-  font-size: 2.4rem;
+  font-size: 1.6rem;
+  text-align: center;
 }
 .home-info h1:last-child {
   margin-bottom: 16px;
@@ -34,8 +36,8 @@
 
 .home-picture {
   width: 100%;
-  padding: 1rem;
   height: auto;
+  padding-bottom: 1rem;
 }
 .home-picture img {
   border-radius: 50px;
@@ -147,4 +149,46 @@
      object-fit: contain;
   width: 36px;
   height: auto;
+}
+
+@media screen and (min-width: 576px) {
+  .home-picture {
+    padding-bottom: 1rem;
+    padding: 1rem;
+  }
+  .home-info h1 {
+    font-size: 2.4rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .home {
+    flex-direction: row;
+  }
+  .home-info {
+    max-width: 40vw;
+  }
+  .home-info h1 {
+    font-size: 2.4rem;
+    text-align: left;
+  }
+  .home-picture {
+    padding: 1rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .home {
+    padding: 4rem 6rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .home {
+    padding: 4rem 10rem;
+  }
+  .home-info {
+    max-width: 35vw;
+  }
+  .home-picture {
+    width: 80%;
+    padding: 1rem;
+  }
 }/*# sourceMappingURL=Home.css.map */
