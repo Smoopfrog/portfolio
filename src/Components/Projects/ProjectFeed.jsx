@@ -76,7 +76,7 @@ const projects = [
     description: "The page you're currently on!",
     tech: ["HTML", "Sass", "React"],
     image: portfolio,
-    url: null,
+    url: "https://jeffstinson.netlify.app/",
     github: "https://github.com/Smoopfrog/portfolio ",
   },
 ];
