@@ -1,10 +1,24 @@
 @import "./Variables.scss";
 
 .home {
-  margin: 0 auto;
-  padding: 2rem;
-  background-color: rgb(228, 228, 228);
-  height: 100vh;
+  // margin: 0 auto;
+  padding: 4rem;
+  background-color: azure;
+  // height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-info {
+  display: flex;
+  flex-direction: column;
+  // gap: 24px;
+  // margin-bottom: 24px;
+  // animation: fadeInLeft 2s both;
+  max-width: 40vw;
+  // padding-right: 2rem;
+  // flex: 1;
 
   h1 {
     font-family: "Rammetto One", cursive;
@@ -12,23 +26,38 @@
     line-height: 1.3;
     font-size: 2.4rem;
   }
+
+  h1:last-child {
+    margin-bottom: 16px;
+  }
+
+  p {
+    margin-bottom: 24px;
+    // width: 50%;
+    align-self: flex-start;
+  }
 }
 
 .home-picture {
-  width: 90%;
+  width: 100%;
+  padding: 1rem;
   height: auto;
   // border: solid 1px black;
-  border-radius: 100%;
-  animation: fadeInRight 1.5s both;
+  // animation: fadeInRight 1.5s both;
 
+  img {
+    border-radius: 50px;
+
+    object-fit: contain;
+  }
 }
 
-.home-container {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  margin-bottom: 48px;
-}
+// .home-container {
+//   display: flex;
+//   flex-direction: column-reverse;
+//   align-items: center;
+//   margin-bottom: 48px;
+// }
 
 @keyframes fadeInLeft {
   0% {
@@ -53,29 +82,11 @@
   }
 }
 
-
-.home-info {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  margin-bottom: 24px;
-  animation: fadeInLeft 2s both;
-
-  h1:first-child {
-    margin-top: 36px;
-  }
-
-  p {
-    // width: 50%;
-    align-self: flex-start;
-  }
-}
-
 .home-links {
   display: flex;
   align-items: center;
   gap: 20px;
-  animation: fadeInLeft 2s both;
+  // animation: fadeInLeft 2s both;
 
   a {
     align-items: center;
@@ -158,20 +169,12 @@
 
 .slider:before {
   left: 0;
-  background: linear-gradient(
-    to left,
-    rgba(255, 255, 255, 0),
-    rgb(228, 228, 228)
-  );
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), azure);
 }
 
 .slider:after {
   right: 0;
-  background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0),
-    rgb(228, 228, 228)
-  );
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), azure);
 }
 
 .slider .slide-track {
@@ -212,125 +215,124 @@
   }
 }
 
-@media screen and (min-width: $breakpoint-small) {
-  .home-picture {
-    width: 70%;
-  }
-}
+// @media screen and (min-width: $breakpoint-small) {
+//   .home-picture {
+//     width: 70%;
+//   }
+// }
 
+// @media screen and (min-width: $breakpoint-medium) {
+//   .home {
+//     width: 100%;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
 
-@media screen and (min-width: $breakpoint-medium) {
-  .home {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+//     h1 {
+//       font-size: 3rem;
+//     }
 
-    h1 {
-      font-size:3rem;
-    }
+//     p {
+//       font-size: 1.6rem;
+//       // width: 90%;
+//       color: #474747;
+//     }
+//   }
 
-    p {
-      font-size: 1.6rem;
-      width: 90%;
-      color: #474747;
-    }
-  }
-  
-  .social-icon {
-    width: 60px;
-    height: 60px;
-  }
+//   .social-icon {
+//     width: 60px;
+//     height: 60px;
+//   }
 
-  .social-anchor-circle {
-    width: 60px;
-    height: 60px;
-  }
+//   .social-anchor-circle {
+//     width: 60px;
+//     height: 60px;
+//   }
 
-  .home-container {
-    // width: 90%;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-  }
+//   .home-container {
+//     // width: 90%;
+//     display: flex;
+//     justify-content: center;
+//     flex-direction: row;
+//   }
 
-  .home_tech-stack {
-    width: 90%;
-  }
-  .home-picture {
-    width: 50%;
-  }
-}
+//   .home_tech-stack {
+//     width: 90%;
+//   }
+//   .home-picture {
+//     width: 50%;
+//   }
+// }
 
-@media screen and (min-width: $breakpoint-large) {
-  .home {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 4rem;
+// @media screen and (min-width: $breakpoint-large) {
+//   .home {
+//     width: 100%;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     padding: 4rem;
 
-    h1 {
-      font-size: 2.5rem;
-    }
+//     h1 {
+//       font-size: 2.5rem;
+//     }
 
-    p {
-      font-size: 1.2rem;
-      width: 90%;
-      color: #474747;
-    }
+//     p {
+//       font-size: 1.2rem;
+//       width: 90%;
+//       color: #474747;
+//     }
 
-    .social-icon {
-      width: 60px;
-      height: 60px;
-    }
+//     .social-icon {
+//       width: 60px;
+//       height: 60px;
+//     }
 
-    .social-anchor-circle {
-      width: 60px;
-      height: 60px;
-    }
-  }
+//     .social-anchor-circle {
+//       width: 60px;
+//       height: 60px;
+//     }
+//   }
 
-  .home-picture {
-    width: 40%;
-  }
+//   .home-picture {
+//     width: 40%;
+//   }
 
-  .home-container {
-    // width: 80%;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-  }
+//   .home-container {
+//     // width: 80%;
+//     display: flex;
+//     justify-content: center;
+//     flex-direction: row;
+//   }
 
-  .home_tech-stack {
-    width: 100%;
-  }
+//   .home_tech-stack {
+//     width: 100%;
+//   }
 
-  .slider .slide-track {
-    width: calc(88px * 14);
-  }
+//   .slider .slide-track {
+//     width: calc(88px * 14);
+//   }
 
-  .slide-track {
-    .slide {
-      width: 64px;
-      height: 64px;
-    }
+//   .slide-track {
+//     .slide {
+//       width: 64px;
+//       height: 64px;
+//     }
 
-    div:first-child {
-      margin-left: 20px;
-    }
+//     div:first-child {
+//       margin-left: 20px;
+//     }
 
-    img {
-      object-fit: contain;
-      width: 40px;
-      height: auto;
-    }
-  }
+//     img {
+//       object-fit: contain;
+//       width: 40px;
+//       height: auto;
+//     }
+//   }
 
-  .home_tech-stack-title {
-    font-size: 1.3rem;
-  }
-}
+//   .home_tech-stack-title {
+//     font-size: 1.3rem;
+//   }
+// }
 
 // @media screen and (min-width: $breakpoint-xlarge) {
 //   .home {
