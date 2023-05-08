@@ -7,7 +7,7 @@
   justify-content: center;
   min-width: 90%;
   border-radius: 20px;
-  margin: 0 50px;
+  margin: 0 10%;
   scroll-snap-align: center;
   height: auto;
   background-color: white;
@@ -51,6 +51,7 @@
 .project:last-child {
   margin-right: 10%;
 }
+
 .project-info {
   display: flex;
   flex-direction: column;
