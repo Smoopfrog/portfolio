@@ -11,24 +11,25 @@ const About = () => {
           alt="coding"
           title="https://www.freepik.com/free-vector/hand-drawn-web-developers_12063795.htm#query=programmer%20illustration&position=9&from_view=keyword&track=ais"
         />
-
       </div>
       <div className="about-info">
         <h1>About me</h1>
+
         <p>
-          A full-stack developer, with a background in hospitality management,
-          keen to dive into the world of web development. Graduated from
-          Lighthouse Labs where I became proficient with front and backend
-          technologies such as HTML, CSS, Sass, Javascript, React, and Express,
-          along with many other skills. Seeking opportunities, virtually or in
-          Vancouver.
-          <br />
-          <br />
-          Let's connect!
-          <br />
-          <br />
-          P.S. I bake cookies for my coworkers.
+          For my professional life, I've spent the last decade in hospitality in
+          a wide variety of roles but decided to delve into the world of
+          computer science over the last few years. It started with Code
+          Academy, part-time classes at Langara College, then deciding to fully
+          immerse myself and taking an intensize web development bootcamp at
+          Lighthouse labs over the Summer of 2022.
         </p>
+        <p>
+          Outside of coding, I spend my time enjoying any form of basketball (2x
+          fantasy champion), baking cookies and bread, shredding the ski hills,
+          DMing for my dungeon & dragons campaign, and discovering new places to
+          eat.
+        </p>
+        <p>P.S. I bake cookies for my coworkers.</p>
       </div>
     </section>
   );
