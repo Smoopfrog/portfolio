@@ -12,7 +12,7 @@ const Project = ({ project, id, setCarouselIndex }) => {
       }
     });
     observer.observe(myRef.current);
-  }, []);
+  }, [setCarouselIndex]);
 
   return (
     <article id={id} className="project" ref={myRef}>
