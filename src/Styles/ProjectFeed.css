@@ -9,7 +9,7 @@
   width: 100%;
   padding: 4rem;
   position: relative;
-  background-color: rgba(173, 230, 216, 0.4784313725);
+  background-image: linear-gradient(#fff3bf, rgba(173, 230, 216, 0.4784313725));
 }
 
 .hidden-project {
