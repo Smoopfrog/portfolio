@@ -15,7 +15,7 @@
   align-items: center;
   gap: 36px;
   border-radius: 10px;
-  background-color: white;
+  background-color: #e6bbad;
 }
 .project h1 {
   text-transform: uppercase;
@@ -47,6 +47,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
 }
 
 .tech-stack {

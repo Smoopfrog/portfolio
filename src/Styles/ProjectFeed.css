@@ -9,6 +9,7 @@
   width: 100%;
   padding: 4rem;
   position: relative;
+  background-color: rgba(173, 230, 216, 0.4784313725);
 }
 
 .hidden-project {
@@ -33,6 +34,8 @@
   scroll-snap-align: center;
   gap: 30px;
   margin-bottom: 24px;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
 }
 
 .projects-container::-webkit-scrollbar {
@@ -62,10 +65,12 @@
 
 .arrow:hover {
   cursor: pointer;
+  opacity: 70%;
 }
 
 .disabled:hover {
   cursor: auto;
+  opacity: 50%;
 }
 
 .arrow:active {
