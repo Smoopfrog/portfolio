@@ -1,24 +1,18 @@
 @import "./Variables.scss";
 
 .home {
-  // margin: 0 auto;
-  padding: 4rem;
-  background-color: azure;
-  // height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  
+  padding: 4rem;
+  background-color: azure;
 }
 
 .home-info {
   display: flex;
   flex-direction: column;
-  // gap: 24px;
-  // margin-bottom: 24px;
-  // animation: fadeInLeft 2s both;
   max-width: 40vw;
-  // padding-right: 2rem;
-  // flex: 1;
 
   h1 {
     font-family: "Rammetto One", cursive;

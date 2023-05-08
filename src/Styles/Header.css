@@ -1,28 +1,28 @@
 .header {
-  padding: 5px 5%;
   display: flex;
-  z-index: 10;
   align-items: center;
   justify-content: space-between;
   position: sticky;
+  height: 4rem;
+  padding: 5px 5%;
+  z-index: 10;
   top: 0px;
   background-color: azure;
-  height: 4rem;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 500ms;
   /* Fade in */
 }
 .header button {
+  position: relative;
+  overflow: hidden;
   border: none;
+  padding: 0.2em 0;
   background-color: transparent;
+  color: #333;
   font-size: 1em;
   font-weight: 600;
   text-decoration: none;
-  position: relative;
-  padding: 0.2em 0;
-  color: #333;
-  overflow: hidden;
   transition: color 0.3s;
 }
 .header button:hover {
