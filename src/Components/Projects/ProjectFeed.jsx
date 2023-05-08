@@ -6,6 +6,8 @@ import back from "../../Assets/back.png";
 import initiative from "../../Assets/game-example.png";
 import betbook from "../../Assets/login-example.png";
 import frameFitness from "../../Assets/homepage-still.png";
+import portfolio from "../../Assets/portfolio.png";
+
 
 const projects = [
   {
@@ -68,6 +70,14 @@ const projects = [
     image: frameFitness,
     url: null,
     github: "https://github.com/Smoopfrog/frame-fitness ",
+  },
+  {
+    title: "Portfolio",
+    description: "The page you're currently on!",
+    tech: ["HTML", "Sass", "React"],
+    image: portfolio,
+    url: null,
+    github: "https://github.com/Smoopfrog/portfolio ",
   },
 ];
 
