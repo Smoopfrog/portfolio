@@ -1,5 +1,5 @@
 import "../Styles/About.css";
-import codingImg from "../Assets/coding.jpg";
+import codingImg from "../Assets/me.jpeg";
 import frontEnd from "../Assets/front-end.svg";
 
 const About = () => {
@@ -12,10 +12,10 @@ const About = () => {
           alt="coding"
           title="https://www.freepik.com/free-vector/hand-drawn-web-developers_12063795.htm#query=programmer%20illustration&position=9&from_view=keyword&track=ais"
         />
-        <div className="about-hire">
+        {/* <div className="about-hire">
           <img className="background-img" src={frontEnd} alt="" /> Hire me
           <br /> Im desperate
-        </div>
+        </div> */}
       </div>
       <div className="about-info">
         <h1>About me</h1>
