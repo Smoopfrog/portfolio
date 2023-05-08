@@ -7,9 +7,9 @@
 */
 .about {
   padding: 4rem;
-  height: 80vh;
   gap: 36px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   background-image: linear-gradient(azure, #fff3bf);
 }
@@ -18,9 +18,7 @@
 }
 
 .about-image {
-  position: relative;
-  margin-right: 36px;
-  flex: 1;
+  max-width: 70%;
 }
 .about-image .coding-img {
   box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
@@ -31,42 +29,40 @@
   border-radius: 100%;
 }
 
-.about-hire {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  border-radius: 1000px;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  transform: translate(30%, -60%);
-  right: 0;
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(360deg);
-  }
-  to {
-    transform: rotate(0);
-  }
-}
-.background-img {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  animation: spin 15s linear infinite;
-}
-
 .about-info {
   display: flex;
   flex-direction: column;
-  flex: 1;
+  width: 100%;
   gap: 16px;
-  background-color: white;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (min-width: 576px) {
+  .about-info {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+  }
+}
+@media screen and (min-width: 768px) {
+  .about {
+    flex-direction: row;
+  }
+  .about-info {
+    width: 100%;
+  }
+  .about-image {
+    margin-right: 36px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .about-image {
+    max-width: 40%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about {
+    padding: 4rem 10rem;
+    height: 80vh;
+  }
 }/*# sourceMappingURL=About.css.map */
