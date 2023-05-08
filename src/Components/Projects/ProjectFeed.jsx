@@ -8,7 +8,6 @@ import betbook from "../../Assets/login-example.png";
 import frameFitness from "../../Assets/homepage-still.png";
 import portfolio from "../../Assets/portfolio.png";
 
-
 const projects = [
   {
     title: "Initiative",
@@ -147,27 +146,23 @@ const ProjectFeed = () => {
       </button>
       <div className="projects-container" onScroll={handleScroll}>
         {projects.map((project, index) => {
-          return <Project id={index} project={project} key={index} />;
+          return <Project setCarouselIndex={setCarouselIndex} id={index} project={project} key={index} />;
         })}
       </div>
       <div className="carousel-btns">
         {projects.map((project, index) => {
           return (
-            <div
-              className="circle-container"
+            <svg
+              className={
+                index === carouselIndex ? " circle black" : "circle grey"
+              }
               key={index}
               onClick={() => handleClickScroll(index)}
+              viewBox="0 0 100 100"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <svg
-                className={
-                  index === carouselIndex ? " circle black" : "circle grey"
-                }
-                viewBox="0 0 100 100"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle cx="50" cy="50" r="50" />
-              </svg>
-            </div>
+              <circle cx="50" cy="50" r="50" />
+            </svg>
           );
         })}
       </div>

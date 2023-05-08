@@ -1,8 +1,22 @@
+import { useEffect, useRef } from "react";
 import "../../Styles/Project.css";
 
-const Project = ({ project, id }) => {
+const Project = ({ project, id, setCarouselIndex }) => {
+  const myRef = useRef();
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+
+      const entry = entries[0];
+      if (entry.isIntersecting) {
+        setCarouselIndex(Number(entry.target.id));
+      }
+    });
+    observer.observe(myRef.current);
+  }, []);
+
   return (
-    <article id={id} className="project">
+    <article id={id} className="project" ref={myRef}>
       <div className="project-info">
         <div className="project-title">
           <h1>{project.title}</h1>
