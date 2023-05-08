@@ -7,14 +7,6 @@
   background-image: linear-gradient(#fff3bf, rgba(173, 230, 216, 0.4784313725));
 }
 
-.hidden-project {
-  display: none;
-}
-
-.current-project {
-  display: block;
-}
-
 .carousel {
   display: flex;
   gap: 20px;
@@ -76,7 +68,6 @@
   color: $text-color;
   font-size: 32px;
   font-family: "Rammetto One", cursive;
-  margin-bottom: 32px;
   align-self: flex-start;
 }
 
