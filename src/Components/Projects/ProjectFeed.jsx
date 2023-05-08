@@ -34,9 +34,9 @@ const projects = [
     tech: [
       "React Native",
       "React Navigation",
+      "Redux Toolkit",
       "Expo",
       "Firebase",
-      "Redux Toolkit",
       // "Moment",
     ],
     image: betbook,
@@ -74,14 +74,6 @@ const projects = [
 const ProjectFeed = () => {
   const [carouselIndex, setCarouselIndex] = useState(0);
   const length = projects.length;
-
-  if (carouselIndex === 0) {
-    console.log("Paint it grey");
-  }
-
-  if (carouselIndex === length - 1) {
-    console.log("Paint it grey");
-  }
 
   const handleClickScroll = (index) => {
     const element = document.getElementById(index);
@@ -123,10 +115,9 @@ const ProjectFeed = () => {
     }
   };
 
-
   const handleScroll = () => {
-    console.log('scroll')
-  }
+    console.log("scroll");
+  };
   return (
     <section className="projects" id="projects">
       <h1 className="section-title">Projects</h1>

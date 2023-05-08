@@ -3,22 +3,16 @@ import "../../Styles/Project.css";
 const Project = ({ project, id }) => {
   return (
     <article id={id} className="project">
-      <a
-        className="project-img"
-        href={project.url ? project.url : project.github}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img src={project.image} alt={project.title} />
-      </a>
       <div className="project-info">
-        <h1>{project.title}</h1>
+        <div className="project-title">
+          <h1>{project.title}</h1>
+          <ul className="tech-stack">
+            {project.tech.map((tech, index) => (
+              <li key={index}>{tech}</li>
+            ))}
+          </ul>
+        </div>
         <p>{project.description}</p>
-        <ul className="tech-stack">
-          {project.tech.map((tech, index) => (
-            <li key={index}>{tech}</li>
-          ))}
-        </ul>
         <div className="project-btns">
           {project.url && (
             <a href={project.url} target="_blank" rel="noopener noreferrer">
@@ -36,6 +30,14 @@ const Project = ({ project, id }) => {
           </a>
         </div>
       </div>
+      <a
+        className="project-img"
+        href={project.url ? project.url : project.github}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src={project.image} alt={project.title} />
+      </a>
     </article>
   );
 };
