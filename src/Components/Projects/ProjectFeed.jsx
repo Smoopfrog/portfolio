@@ -7,23 +7,14 @@ import initiative from "../../Assets/game-example.png";
 import betbook from "../../Assets/login-example.png";
 import frameFitness from "../../Assets/homepage-still.png";
 import portfolio from "../../Assets/portfolio.png";
+import frontEnd from "../../Assets/front-end-example.png";
 
 const projects = [
   {
     title: "Initiative",
     description:
       "Create characters, find monsters using D&D 5e API, and track initiative and stats for Dungeons and Dragons encounters.",
-    tech: [
-      // "HTML",
-      // "CSS",
-      // "Javascript",
-      "React",
-      "Redux Toolkit",
-      // "Express",
-      "PSQL",
-      // "Axios",
-      // "Bcrypt",
-    ],
+    tech: ["React", "Redux Toolkit", "PSQL"],
     url: "https://initiative.herokuapp.com/",
     github: "https://github.com/Smoopfrog/Initiative",
     image: initiative,
@@ -31,14 +22,13 @@ const projects = [
   {
     title: "Betbook",
     description:
-      "Keep track of your bets and stats with this easy to use React Native mobile app",
+      "Keep track of your personal bets and stats with this easy to use React Native mobile app",
     tech: [
       "React Native",
       "React Navigation",
       "Redux Toolkit",
       "Expo",
       "Firebase",
-      // "Moment",
     ],
     image: betbook,
     url: null,
@@ -47,32 +37,24 @@ const projects = [
   {
     title: "Frame Fitness",
     description:
-      "Signup or login to choose from a library of 1300+ exercises categorized by chest, arms, legs, forearms, lower legs, back, shoulders, neck, and waist!",
-    tech: [
-      // "HTML",
-      "React",
-      // "SASS",
-      "Material UI",
-      // "Express",
-      "Psql",
-      "Axios",
-      "Socket.io",
-    ],
+      "An app focusing on creating a manageable and flexible workout plan for users by providing a catalog of exercises from ExerciseDB api with an intuitive and responsive design.",
+    tech: ["React", "Material UI", "Psql", "Axios", "Socket.io"],
     image: frameFitness,
     url: null,
     github: "https://github.com/Smoopfrog/frame-fitness ",
   },
   {
-    title: "Front-end Mentorship things",
-    description: "A collection of Front-end Mentorship Projects",
+    title: "Front-End Mentorship",
+    description:
+      "A collection of Front-end Mentorship projects all made with vanilla HTML, CSS and Javascript.",
     tech: ["HTML", "CSS", "Javascript"],
-    image: frameFitness,
-    url: null,
-    github: "https://github.com/Smoopfrog/frame-fitness ",
+    image: frontEnd,
+    url: "https://splitterjss.netlify.app/",
+    github: "https://github.com/Smoopfrog/tip-calculator-app",
   },
   {
     title: "Portfolio",
-    description: "The page you're currently on!",
+    description: "This page! Built with react and sass to showcase myself.",
     tech: ["HTML", "Sass", "React"],
     image: portfolio,
     url: "https://jeffstinson.netlify.app/",
@@ -146,7 +128,14 @@ const ProjectFeed = () => {
       </button>
       <div className="projects-container" onScroll={handleScroll}>
         {projects.map((project, index) => {
-          return <Project setCarouselIndex={setCarouselIndex} id={index} project={project} key={index} />;
+          return (
+            <Project
+              setCarouselIndex={setCarouselIndex}
+              id={index}
+              project={project}
+              key={index}
+            />
+          );
         })}
       </div>
       <div className="carousel-btns">
