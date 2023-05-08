@@ -2,8 +2,8 @@
 
 .about {
   padding: 4rem;
-  background-color: azure;
-  height: 100vh;
+  background-color: #fff3bf;
+  height: 80vh;
   gap: 36px;
   display: flex;
   align-items: center;
@@ -16,12 +16,15 @@
 .about-image {
   position: relative;
   margin-right: 36px;
-  
+  flex: 1;
+
   .coding-img {
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+
     width: 100%;
     height: auto;
     object-fit: contain;
-    border-radius: 50px;
+    border-radius: 100%;
   }
 }
 
@@ -58,5 +61,11 @@
 .about-info {
   display: flex;
   flex-direction: column;
+  flex: 1;
   gap: 16px;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+
 }
