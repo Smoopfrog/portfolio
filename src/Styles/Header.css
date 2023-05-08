@@ -6,12 +6,11 @@
   justify-content: space-between;
   position: sticky;
   top: 0px;
-  background-color: #fff;
+  background-color: azure;
   height: 4rem;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 500ms;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
   /* Fade in */
 }
 .header button {
