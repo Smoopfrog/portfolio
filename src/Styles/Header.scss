@@ -4,7 +4,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  // position: relative;
   position: sticky;
   height: 4rem;
   padding: 5px 5%;
@@ -32,11 +31,11 @@
 
     transition: color 0.3s;
   }
+
   button:hover {
     color: grey;
     cursor: pointer;
   }
-  /* Fade in */
 
   button:hover h1,
   a:link,
@@ -78,20 +77,23 @@
 }
 
 .header-links {
-  // z-index: 30;
   position: absolute;
   top: 4rem;
+  left: 0;
+
   display: flex;
-  justify-content: center;
   flex-direction: column;
   gap: 48px;
+
   height: 100vh;
-  left: 0;
   width: 100vw;
+  padding-top: 25%;
+  font-size: 36px;
+
   background-color: azure;
+  
   transform: translateX(0);
   transition: transform 0.3s;
-  font-size: 36px;
 }
 
 .show-nav {
@@ -123,6 +125,7 @@
       transform: translate3d(0, 0, 0);
     }
   }
+
   .header-links {
     position: static;
     top: 4rem;

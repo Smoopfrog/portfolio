@@ -18,7 +18,6 @@
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 500ms;
-  /* Fade in */
 }
 .header button {
   position: relative;
@@ -73,17 +72,17 @@
 .header-links {
   position: absolute;
   top: 4rem;
+  left: 0;
   display: flex;
-  justify-content: center;
   flex-direction: column;
   gap: 48px;
   height: 100vh;
-  left: 0;
   width: 100vw;
+  padding-top: 25%;
+  font-size: 36px;
   background-color: azure;
   transform: translateX(0);
   transition: transform 0.3s;
-  font-size: 36px;
 }
 
 .show-nav {
