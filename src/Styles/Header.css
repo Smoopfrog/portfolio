@@ -1,3 +1,10 @@
+/*
+  SPACING SYSTEM (px)
+  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+  FONT SIZE SYSTEM (px)
+  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
 .header {
   display: flex;
   align-items: center;
@@ -29,22 +36,6 @@
   color: grey;
   cursor: pointer;
 }
-.header button::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 99.9%;
-  height: 0.1em;
-  background-color: grey;
-  opacity: 1;
-  transition: opacity 300ms, transform 300ms;
-  transform: translate3d(-100%, 0, 0);
-}
-.header button:hover::after,
-.header button:active::after {
-  transform: translate3d(0, 0, 0);
-}
 .header button:hover h1,
 .header a:link,
 .header a:visited {
@@ -56,6 +47,7 @@
   color: #333;
   font-family: "Rammetto One", cursive;
   transition: color 0.3s;
+  position: relative;
 }
 .header a:link {
   text-decoration: none;
@@ -69,11 +61,68 @@
   color: grey;
 }
 
+.menu-button {
+  height: 100%;
+  width: 50px;
+}
+
 .header.down {
   top: -6rem;
 }
 
 .header-links {
+  position: absolute;
+  top: 4rem;
   display: flex;
-  gap: 20px;
+  justify-content: center;
+  flex-direction: column;
+  gap: 48px;
+  height: 100vh;
+  left: 0;
+  width: 100vw;
+  background-color: azure;
+  transform: translateX(0);
+  transition: transform 0.3s;
+  font-size: 36px;
+}
+
+.show-nav {
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.hide-nav {
+  transform: translateX(-100%);
+}
+
+@media screen and (min-width: 576px) {
+  .header button::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 99.9%;
+    height: 0.1em;
+    background-color: grey;
+    opacity: 1;
+    transition: opacity 300ms, transform 300ms;
+    transform: translate3d(-100%, 0, 0);
+  }
+  .header button:hover::after,
+  .header button:active::after {
+    transform: translate3d(0, 0, 0);
+  }
+  .header-links {
+    position: static;
+    top: 4rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 36px;
+    height: auto;
+    width: auto;
+    background-color: transparent;
+    transform: none;
+    transition: none;
+  }
 }/*# sourceMappingURL=Header.css.map */

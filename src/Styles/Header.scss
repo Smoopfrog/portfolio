@@ -1,8 +1,10 @@
+@import "./Variables.scss";
+
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+  // position: relative;
   position: sticky;
   height: 4rem;
   padding: 5px 5%;
@@ -30,29 +32,11 @@
 
     transition: color 0.3s;
   }
-
   button:hover {
     color: grey;
     cursor: pointer;
   }
   /* Fade in */
-  button::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 99.9%;
-    height: 0.1em;
-    background-color: grey;
-    opacity: 1;
-    transition: opacity 300ms, transform 300ms;
-    transform: translate3d(-100%, 0, 0);
-  }
-
-  button:hover::after,
-  button:active::after {
-    transform: translate3d(0, 0, 0);
-  }
 
   button:hover h1,
   a:link,
@@ -66,8 +50,9 @@
     color: #333;
     font-family: "Rammetto One", cursive;
     transition: color 0.3s;
+    position: relative;
   }
-  
+
   a:link {
     text-decoration: none;
     color: #333;
@@ -83,11 +68,81 @@
   }
 }
 
+.menu-button {
+  height: 100%;
+  width: 50px;
+}
+
 .header.down {
   top: -6rem;
 }
 
 .header-links {
+  // z-index: 30;
+  position: absolute;
+  top: 4rem;
   display: flex;
-  gap: 20px;
+  justify-content: center;
+  flex-direction: column;
+  gap: 48px;
+  height: 100vh;
+  left: 0;
+  width: 100vw;
+  background-color: azure;
+  transform: translateX(0);
+  transition: transform 0.3s;
+  font-size: 36px;
 }
+
+.show-nav {
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.hide-nav {
+  transform: translateX(-100%);
+}
+
+@media screen and (min-width: $breakpoint-small) {
+  .header {
+    button::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 99.9%;
+      height: 0.1em;
+      background-color: grey;
+      opacity: 1;
+      transition: opacity 300ms, transform 300ms;
+      transform: translate3d(-100%, 0, 0);
+    }
+
+    button:hover::after,
+    button:active::after {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  .header-links {
+    position: static;
+    top: 4rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 36px;
+    height: auto;
+    width: auto;
+    background-color: transparent;
+    transform: none;
+    transition: none;
+  }
+}
+
+// @media screen and (min-width: $breakpoint-medium) {
+// }
+
+// @media screen and (min-width: $breakpoint-large) {
+// }
+
+// @media screen and (min-width: $breakpoint-xlarge) {
+// }
