@@ -4,21 +4,12 @@ import { useState } from "react";
 import next from "../../Assets/next.png";
 import back from "../../Assets/back.png";
 import initiative from "../../Assets/game-example.png";
-import betbook from "../../Assets/login-example.png";
+import betbook from "../../Assets/betbook-example.png";
 import frameFitness from "../../Assets/homepage-still.png";
 import portfolio from "../../Assets/portfolio.png";
 import frontEnd from "../../Assets/front-end-example.png";
 
 const projects = [
-  {
-    title: "Initiative",
-    description:
-      "Create characters, find monsters using D&D 5e API, and track initiative and stats for Dungeons and Dragons encounters.",
-    tech: ["React", "Redux Toolkit", "PSQL"],
-    url: "https://initiative.herokuapp.com/",
-    github: "https://github.com/Smoopfrog/Initiative",
-    image: initiative,
-  },
   {
     title: "Betbook",
     description:
@@ -34,6 +25,16 @@ const projects = [
     url: null,
     github: "https://github.com/Smoopfrog/bet-book",
   },
+  {
+    title: "Initiative",
+    description:
+      "My first project out of bootcamp to help run my DnD games. Create characters, find monsters using D&D 5e API, and track initiative and stats for Dungeons and Dragons encounters.",
+    tech: ["React", "Redux Toolkit", "PSQL"],
+    url: "https://initiative.herokuapp.com/",
+    github: "https://github.com/Smoopfrog/Initiative",
+    image: initiative,
+  },
+
   {
     title: "Frame Fitness",
     description:
