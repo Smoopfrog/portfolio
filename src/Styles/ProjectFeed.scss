@@ -2,26 +2,28 @@
 
 .projects {
   width: 100%;
-  padding: 4rem;
+  padding: 4rem 0;
   position: relative;
   background-image: linear-gradient(#fff3bf, rgba(173, 230, 216, 0.4784313725));
 }
 
-.carousel {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  margin-bottom: 48px;
+.section-title {
+  text-align: center;
+  color: $text-color;
+  font-size: 32px;
+  font-family: "Rammetto One", cursive;
 }
 
 .projects-container {
   display: flex;
+  align-items: center;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-snap-align: center;
   gap: 30px;
-  margin-bottom: 24px;
+  margin: 24px 0;
   border-radius: 10px;
+  height: 55vh;
 }
 
 .projects-container::-webkit-scrollbar {
@@ -31,10 +33,10 @@
 .arrow {
   width: 48px;
   height: 48px;
-  top: 50%;
   position: absolute;
   background-color: transparent;
   border: none;
+  top: 64px;
 
   img {
     width: 100%;
@@ -43,11 +45,11 @@
 }
 
 .arrow-left {
-  left: 3rem;
+  left: 2rem;
 }
 
 .arrow-right {
-  right: 3rem;
+  right: 2rem;
 }
 
 .arrow:hover {
@@ -62,13 +64,6 @@
 
 .arrow:active {
   opacity: 50%;
-}
-
-.section-title {
-  color: $text-color;
-  font-size: 32px;
-  font-family: "Rammetto One", cursive;
-  align-self: flex-start;
 }
 
 .carousel-btns {
@@ -95,4 +90,76 @@
 
 .disabled {
   opacity: 50%;
+}
+
+@media screen and (min-width: $breakpoint-small) {
+  .projects-container {
+    height: 60vh;
+  }
+
+  .arrow-left {
+    left: 20%;
+  }
+
+  .arrow-right {
+    right: 20%;
+  }
+}
+
+@media screen and (min-width: $breakpoint-medium) {
+  .projects {
+    padding: 4rem 0;
+  }
+
+  .projects-container {
+    height: 70vh;
+  }
+}
+
+@media screen and (min-width: $breakpoint-large) {
+  .arrow {
+    top: 50%;
+  }
+
+  .arrow-left {
+    left: 10%;
+  }
+
+  .arrow-right {
+    right: 10%;
+  }
+
+  .projects {
+    padding: 4rem 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projects-container {
+    width: 90%;
+    align-self: center;
+  }
+}
+
+@media screen and (min-width: $breakpoint-xlarge) {
+  .projects {
+    padding: 4rem 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .arrow-left {
+    left: 15%;
+  }
+
+  .arrow-right {
+    right: 15%;
+  }
+
+  .projects-container {
+    width: 70%;
+    align-self: center;
+  }
 }

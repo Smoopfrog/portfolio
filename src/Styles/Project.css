@@ -10,8 +10,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-width: 100%;
+  min-width: 90%;
+  border-radius: 20px;
+  margin: 0 50px;
   scroll-snap-align: center;
+  height: 90%;
+  background-color: white;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
 }
 .project h1 {
   text-transform: uppercase;
@@ -36,6 +41,14 @@
 }
 .project img:hover {
   box-shadow: 3px 3px 6px 0px rgb(0, 0, 0);
+}
+
+.project:first-child {
+  margin-left: 10%;
+}
+
+.project:last-child {
+  margin-right: 10%;
 }
 
 .project-info {
@@ -108,4 +121,10 @@
 .project-btns a:active {
   box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
   transform: translate3d(0, 0, 0);
+}
+
+@media screen and (min-width: 992px) {
+  .project {
+    min-width: 90%;
+  }
 }/*# sourceMappingURL=Project.css.map */
