@@ -9,9 +9,9 @@
   border-radius: 20px;
   margin: 0 10%;
   scroll-snap-align: center;
-  height: auto;
   background-color: white;
   box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+  padding-top: 16px;
 
   h1 {
     text-transform: uppercase;
@@ -76,7 +76,7 @@
     font-style: italic;
     font-size: 0.7rem;
     padding-right: 10px;
-    color: rgb(147, 147, 147)
+    color: rgb(147, 147, 147);
   }
   li:after {
     padding-left: 6px;

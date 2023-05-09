@@ -14,9 +14,9 @@
   border-radius: 20px;
   margin: 0 10%;
   scroll-snap-align: center;
-  height: auto;
   background-color: white;
   box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+  padding-top: 16px;
 }
 .project h1 {
   text-transform: uppercase;
