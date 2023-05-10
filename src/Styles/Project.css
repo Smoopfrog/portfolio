@@ -29,7 +29,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 70%;
   margin-bottom: 10px;
 }
 .project .project-img img {
@@ -127,5 +127,8 @@
 @media screen and (min-width: 992px) {
   .project {
     min-width: 90%;
+  }
+  .project-img {
+    width: 80%;
   }
 }/*# sourceMappingURL=Project.css.map */

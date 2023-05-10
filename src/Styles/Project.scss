@@ -27,7 +27,7 @@
     justify-content: center;
     align-items: center;
 
-    width: 80%;
+    width: 70%;
     margin-bottom: 10px;
 
     img {
@@ -139,8 +139,11 @@
 
 @media screen and (min-width: $breakpoint-large) {
   .project {
-    // background-color: transparent;
     min-width: 90%;
+  }
+
+  .project-img {
+    width: 80%;
   }
 }
 
