@@ -49,7 +49,7 @@ const Project = ({ project, id, setCarouselIndex }) => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img loading="lazy" src={project.image} alt={project.title} />
+        <img src={project.image} alt={project.title} />
       </a>
     </article>
   );
