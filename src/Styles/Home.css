@@ -177,11 +177,13 @@
 @media screen and (min-width: 992px) {
   .home {
     padding: 4rem 6rem;
+    padding-top: 8%;
   }
 }
 @media screen and (min-width: 1200px) {
   .home {
     padding: 4rem 10rem;
+    padding-top: 8%;
   }
   .home-info {
     max-width: 35%;

@@ -190,12 +190,14 @@
 @media screen and (min-width: $breakpoint-large) {
   .home {
     padding: 4rem 6rem;
+    padding-top: 8%;
   }
 }
 
 @media screen and (min-width: $breakpoint-xlarge) {
   .home {
     padding: 4rem 10rem;
+    padding-top: 8%;
   }
 
   .home-info {
