@@ -1,18 +1,18 @@
 import "../Styles/Home.css";
-import htmlLogo from "../Assets/html-5.png";
-import cssLogo from "../Assets/css.png";
-import jsLogo from "../Assets/javascript.png";
-import reactLogo from "../Assets/react.png";
+import htmlLogo from "../Assets/html-5.webp";
+import cssLogo from "../Assets/css.webp";
+import jsLogo from "../Assets/javascript.webp";
+import reactLogo from "../Assets/react.webp";
 import reactNativeLogo from "../Assets/react-native.png";
 import reduxLogo from "../Assets/redux.png";
-import expoLogo from "../Assets/expo.png";
+import expoLogo from "../Assets/expo.webp";
 import sassLogo from "../Assets/sass.png";
-import muiLogo from "../Assets/mui.png";
-import nodeLogo from "../Assets/nodejs.png";
-import firebaseLogo from "../Assets/firebase.png";
-import psqlLogo from "../Assets/psql.png";
-import gitLogo from "../Assets/git.png";
-import me from "../Assets/coding.jpg";
+import muiLogo from "../Assets/mui.webp";
+import nodeLogo from "../Assets/nodejs.webp";
+import firebaseLogo from "../Assets/firebase.webp";
+import psqlLogo from "../Assets/psql.webp";
+import gitLogo from "../Assets/git.webp";
+import me from "../Assets/coding.webp";
 
 const Home = () => {
   return (

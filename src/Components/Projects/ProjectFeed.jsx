@@ -1,13 +1,13 @@
 import Project from "./Project";
 import "../../Styles/ProjectFeed.css";
 import { useState } from "react";
-import next from "../../Assets/next.png";
-import back from "../../Assets/back.png";
-import initiative from "../../Assets/game-example.png";
-import betbook from "../../Assets/betbook-example.png";
-import frameFitness from "../../Assets/homepage-still.png";
-import portfolio from "../../Assets/portfolio.png";
-import frontEnd from "../../Assets/front-end-example.png";
+import next from "../../Assets/next.webp";
+import back from "../../Assets/back.webp";
+import initiative from "../../Assets/game-example.webp";
+import betbook from "../../Assets/betbook-example.webp";
+import frameFitness from "../../Assets/homepage-still.webp";
+import portfolio from "../../Assets/portfolio.webp";
+import frontEnd from "../../Assets/front-end-example.webp";
 
 const projects = [
   {
