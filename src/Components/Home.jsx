@@ -29,7 +29,6 @@ const Home = () => {
           for creating enjoyable and intuitives apps.
         </p>
         <div className="home_tech-stack">
-          {/* <div className="home_tech-stack-title">Tech Stack</div> */}
           <div className="slider">
             <div className="slide-track">
               <div className="slide" title="HTML5">
@@ -116,13 +115,11 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="home-picture">
-        <img
-          className="home-picture"
-          src={me}
-          alt="The most handsome man in the world"
-        />
-      </div>
+      <img
+        className="home-picture"
+        src={me}
+        alt="The most handsome man in the world"
+      />
     </section>
   );
 };

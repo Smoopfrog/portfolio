@@ -38,8 +38,6 @@
   width: 100%;
   height: auto;
   padding-bottom: 1rem;
-}
-.home-picture img {
   border-radius: 50px;
   -o-object-fit: contain;
      object-fit: contain;
@@ -172,6 +170,7 @@
     text-align: left;
   }
   .home-picture {
+    width: 50%;
     padding: 1rem;
   }
 }
@@ -185,10 +184,10 @@
     padding: 4rem 10rem;
   }
   .home-info {
-    max-width: 35vw;
+    max-width: 35%;
   }
   .home-picture {
-    width: 80%;
+    width: 40%;
     padding: 1rem;
   }
 }/*# sourceMappingURL=Home.css.map */
