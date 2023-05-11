@@ -1,5 +1,5 @@
 import "../Styles/About.css";
-import codingImg from "../Assets/me.jpeg";
+import codingImg from "../Assets/me.webp";
 
 const About = () => {
   return (
@@ -7,7 +7,6 @@ const About = () => {
       <div className="about-image">
         <img
           className="coding-img"
-          loading="lazy"
           src={codingImg}
           alt="coding"
           title="https://www.freepik.com/free-vector/hand-drawn-web-developers_12063795.htm#query=programmer%20illustration&position=9&from_view=keyword&track=ais"
