@@ -128,6 +128,7 @@
   align-items: center;
   gap: 20px;
   width: 100%;
+  height: 90px;
 }
 .slide-track .slide {
   display: flex;
@@ -138,6 +139,10 @@
   height: 64px;
   background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+  transition: all 0.3s ease;
+}
+.slide-track .slide:hover {
+  transform: scale(1.1);
 }
 .slide-track div:first-child {
   margin-left: 20px;
