@@ -98,7 +98,7 @@ const Header = () => {
           <button onClick={() => handleClickScroll("contact")}>Contact</button>
           <button>
             <a
-              href="https://docs.google.com/document/d/e/2PACX-1vTqtrwCZIbWVwJQdFUo4jv7ZHw-DpTDhVrCntPZ7mOTKhYeIYPKF0VMs6TPjjZoYKdZ8TsqeWIz0KW_/pub"
+              href="https://flowcv.com/resume/3q4wpjg9ja"
               target="_blank"
               rel="noreferrer"
             >
